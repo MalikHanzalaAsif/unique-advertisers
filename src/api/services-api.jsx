@@ -1,0 +1,554 @@
+// Icons
+import { Images } from "@/components/ListImages";
+import { BsEnvelopeHeartFill } from "react-icons/bs";
+import { FaMagic } from "react-icons/fa";
+import { FaArrowsToEye } from "react-icons/fa6";
+import { MdInput } from "react-icons/md";
+
+// TODO: Fulfill the data according to document it is just dummy.
+export const webServiceData = {
+  currentTab: "website",
+  serivceBannerHeading: "Web & Mobile Development",
+  serviceSubheading: "",
+  infoServiceTitle: "Web Design",
+  infoServiceDesc:
+    "At Unique Advertisers, we specialise in creating visually appealing, dynamic websites that are simple to use and retain. Our talented development team uses the most recent technology to craft unique websites that are tailored to your unique requirements, ensuring perfect operation and an exceptional user experience.",
+  infoServiceImage: "WebsiteShotOne",
+  cardContent: [
+    {
+      boxLogo: "",
+      boxTitle: "",
+      boxContent: "",
+    },
+  ],
+  serviceDetailsTitle: "Web Design",
+  serviceDetailsDesc:
+    "Our specialty at Unique Advertisers is building captivating, dynamic websites that are easy to navigate and remember. Using the newest technology, our skilled development team creates custom websites that are suited to your specific needs, guaranteeing flawless operation and an outstanding user experience.",
+  serviceDetailsImage: "WebsiteShotSeven",
+  serviceIconList: [
+    {
+      title: "Share your vision",
+      icon: <FaArrowsToEye />,
+    },
+    {
+      title: "Weave the Magic",
+      icon: <FaMagic />,
+    },
+    {
+      title: "Your Input Matters",
+      icon: <MdInput />,
+    },
+  ],
+  galleryPhotos: [
+    {
+      src: "WebsiteShotOne",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotTwo",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotThree",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotFour",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotFive",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotSix",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotEight",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotTen",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotEleven",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotTwelve",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotThirteen",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotFouteen",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "WebsiteShotFifteen",
+      width: 500,
+      height: 400,
+    },
+  ],
+};
+
+// TODO: Fulfill the data according to document it is just dummy.
+export const graphicServiceData = {
+  currentTab: "logo",
+  serivceBannerHeading: "Graphic Design",
+  serviceSubheading: "",
+  infoServiceTitle: "Graphic Design",
+  infoServiceDesc:
+    "Make a lasting impression on the competitors with our captivating graphic designs. Whether you need an eye-catching logo, branding materials, or stunning images for your website or marketing campaigns, our talented designers will creatively and accurately bring your vision to life.",
+  infoServiceImage: "LogoShotThree",
+  cardContent: [
+    {
+      boxLogo: "",
+      boxTitle: "",
+      boxContent: "",
+    },
+  ],
+  serviceDetailsTitle: "Graphic Design",
+  serviceDetailsDesc:
+    "With our eye-catching visual designs, stand out from the competition. Our skilled designers creatively and precisely realize your idea, whether you require a captivating logo, eye-catching branding materials, or gorgeous visuals for your website or marketing campaigns. ",
+  serviceDetailsImage: Images.GRAPHICS_COVER,
+  serviceIconList: [
+    {
+      title: "Share your vision",
+      icon: <FaArrowsToEye />,
+    },
+    {
+      title: "Weave the Magic",
+      icon: <FaMagic />,
+    },
+  ],
+  galleryPhotos: [
+    {
+      src: "LogoShotOne",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotTwo",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotThree",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotFour",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotFive",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotSix",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotSeven",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotEight",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotNine",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotTen",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotEleven",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotTwelve",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "LogoShotThirteen",
+      width: 500,
+      height: 400,
+    },
+  ],
+};
+
+// TODO: Fulfill the data according to document it is just dummy.
+export const animationServiceData = {
+  currentTab: "anim",
+  serivceBannerHeading: "Video Animation",
+  serviceSubheading: "",
+  infoServiceTitle: "Video Animation",
+  infoServiceDesc:
+    "Capture attention and tell your story with our captivating video animations. Whether it's explainer videos, promotional animations, or multimedia presentations, our talented animators combine creativity and technology to deliver engaging visual content that leaves a lasting impression.",
+  infoServiceImage: "VideoShot",
+  cardContent: [
+    {
+      boxLogo: "",
+      boxTitle: "",
+      boxContent: "",
+    },
+  ],
+  serviceDetailsTitle: "Video Animation",
+  serviceDetailsDesc:
+    "Capture attention and tell your story with our captivating video animations. Whether it's explainer videos, promotional animations, or multimedia presentations, our talented animators combine creativity and technology to deliver engaging visual content that leaves a lasting impression.",
+  serviceDetailsImage: "ANIM_POSTER_6",
+  serviceIconList: [
+    {
+      title: "Share your vision",
+      icon: <FaArrowsToEye />,
+    },
+    {
+      title: "Weave the Magic",
+      icon: <FaMagic />,
+    },
+  ],
+  galleryPhotos: [
+    {
+      src: "https://envato-shoebox-0.imgix.net/a8d9/d1b9-bd39-4f51-8a2c-ab9eab49e757/4H1A4894.jpg?auto=compress%2Cformat&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&w=1000&fit=max&markalign=center%2Cmiddle&markalpha=18&s=27375fb9bb68ab458f3367a64abda5f3",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "https://envato-shoebox-0.imgix.net/a8d9/d1b9-bd39-4f51-8a2c-ab9eab49e757/4H1A4894.jpg?auto=compress%2Cformat&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&w=1000&fit=max&markalign=center%2Cmiddle&markalpha=18&s=27375fb9bb68ab458f3367a64abda5f3",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "https://envato-shoebox-0.imgix.net/21bb/59a2-4ea7-450c-8bc3-ee412ec56aee/IMG_7483-Enhanced-NR.jpg?auto=compress%2Cformat&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&w=1000&fit=max&markalign=center%2Cmiddle&markalpha=18&s=d26a8504a1196d8374e041a149412ea0",
+      width: 500,
+      height: 400,
+    },
+  ],
+};
+
+// TODO: Fulfill the data according to document it is just dummy.
+export const brandingServiceData = {
+  currentTab: "brand",
+  serivceBannerHeading: "Branding and Strategy",
+  serviceSubheading: "",
+  infoServiceTitle: "Branding and Strategy",
+  infoServiceDesc:
+    "We are here to assist you in leaving a lasting impression. Your brand is an extension of your identity. In close collaboration with you, our branding specialists create a unified brand identity and strategy that connects with your target market, fosters trust, and helps you stand out from the competition.",
+  infoServiceImage: "BrandingShotTwo",
+  cardContent: [
+    {
+      boxLogo: "",
+      boxTitle: "",
+      boxContent: "",
+    },
+  ],
+  serviceDetailsTitle: "Branding and Strategy",
+  serviceDetailsDesc:
+    "We are here to assist you in leaving a lasting impression. Your brand is an extension of your identity. In close collaboration with you, our branding specialists create a unified brand identity and strategy that connects with your target market, fosters trust, and helps you stand out from the competition.",
+  serviceDetailsImage: "BrandingShotTwelve",
+  serviceIconList: [
+    {
+      title: "Share your vision",
+      icon: <FaArrowsToEye />,
+    },
+    {
+      title: "Weave the Magic",
+      icon: <FaMagic />,
+    },
+  ],
+  galleryPhotos: [
+    {
+      src: "BrandingShotOne",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotTwo",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotThree",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotFour",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotFive",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotSix",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotSeven",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotEight",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotNine",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotTen",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotEleven",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotThirteen",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "BrandingShotForteen",
+      width: 500,
+      height: 400,
+    },
+  ],
+};
+
+// TODO: Fulfill the data according to document it is just dummy.
+export const marketingServiceData = {
+  currentTab: "social",
+  serivceBannerHeading: "Digital Marketing",
+  serviceSubheading: "",
+  infoServiceTitle: "Digital Marketing",
+  infoServiceDesc:
+    " With our planned digital marketing services, you may maximize your online presence and achieve results. We provide tailored plans to reach your target audience and meet your company goals, ranging from email campaigns and social media marketing to pay-per-click (PPC) advertising and search engine optimization (SEO). ",
+  infoServiceImage: "MarketingShotTwo",
+  cardContent: [
+    {
+      boxLogo: "",
+      boxTitle: "",
+      boxContent: "",
+    },
+  ],
+  serviceDetailsTitle: "Digital Marketing",
+  serviceDetailsDesc:
+    "With our planned digital marketing services, you may maximize your online presence and achieve results. We provide tailored plans to reach your target audience and meet your company goals, ranging from email campaigns and social media marketing to pay-per-click (PPC) advertising and search engine optimization (SEO).",
+  serviceDetailsImage: "MarketingShotFouteen",
+  serviceIconList: [
+    {
+      title: "Share your vision",
+      icon: <FaArrowsToEye />,
+    },
+    {
+      title: "Weave the Magic",
+      icon: <FaMagic />,
+    },
+  ],
+  galleryPhotos: [
+    {
+      src: "MarketingShotOne",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotTwo",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotThree",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotFour",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotFive",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotSeven",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotEight",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotNine",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotTen",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotEleven",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotTwelve",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotThirteen",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotFifteen",
+      width: 500,
+      height: 400,
+    },
+  ],
+};
+
+// TODO: Fulfill the data according to document it is just dummy.
+export const StreamersServiceData = {
+  currentTab: "stream",
+  serivceBannerHeading: "Streamers Templates",
+  serviceSubheading: "",
+  infoServiceTitle: "Streamers Templates",
+  infoServiceDesc:
+    " With our planned digital marketing services, you may maximize your online presence and achieve results. We provide tailored plans to reach your target audience and meet your company goals, ranging from email campaigns and social media marketing to pay-per-click (PPC) advertising and search engine optimization (SEO). ",
+  infoServiceImage: "VideoShot2",
+  cardContent: [
+    {
+      boxLogo: "",
+      boxTitle: "",
+      boxContent: "",
+    },
+  ],
+  serviceDetailsTitle: "Streamers Templates",
+  serviceDetailsDesc:
+    "At Unique Advertisers, we specialise in creating visually appealing, dynamic websites that are simple to use and retain. Our talented development team uses the most recent technology to craft unique websites that are tailored to your unique requirements, ensuring perfect operation and an exceptional user experience.",
+  serviceDetailsImage: Images.STREAMER_COVER,
+  serviceIconList: [
+    {
+      title: "Share your vision",
+      icon: <FaArrowsToEye />,
+    },
+    {
+      title: "Weave the Magic",
+      icon: <FaMagic />,
+    },
+  ],
+  galleryPhotos: [
+    {
+      src: "MarketingShotOne",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotTwo",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotThree",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotFour",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotFive",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotSeven",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotEight",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotNine",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotTen",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotEleven",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotTwelve",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotThirteen",
+      width: 500,
+      height: 400,
+    },
+    {
+      src: "MarketingShotFifteen",
+      width: 500,
+      height: 400,
+    },
+  ],
+};

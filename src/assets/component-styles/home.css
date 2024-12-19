@@ -1,0 +1,110 @@
+.smooth_slider .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.hero_bg_blush {
+  z-index: -1;
+  top: -3rem;
+}
+
+.hero_blush_left {
+  top: -16%;
+  left: -42%;
+}
+
+.arrow_swing {
+  display: inline;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  width: 89%;
+}
+
+.arrow_swing img {
+  text-align: end;
+  display: block;
+  margin-left: auto;
+}
+
+.about_sec_last > div {
+  position: absolute;
+}
+
+.about_table {
+  bottom: 0;
+  z-index: -5;
+  mix-blend-mode: luminosity;
+}
+
+.graph_shot {
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+.your_style {
+  max-width: 500px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  bottom: 48px;
+}
+.casual_dress {
+  max-width: 350px;
+  z-index: -3;
+  right: 0;
+  top: -70px;
+  right: -43px;
+}
+.cylinder {
+  bottom: -15px;
+  right: -35px;
+  mix-blend-mode: luminosity;
+}
+
+.sol_full * {
+  transition: 0.2s all;
+}
+
+.sol_full a:hover h3,
+.sol_full a:hover h4,
+.sol_full a:hover svg {
+  color: var(--color-primary);
+}
+
+.sol_full h4 {
+  font-size: 38px;
+}
+
+.sol_full h3 {
+  font-size: 37px;
+  line-height: 1em;
+}
+
+.sol_full svg {
+  font-size: 100px;
+  transform: rotate(45deg);
+}
+
+.sol_shot {
+  width: 30%;
+  position: relative;
+  margin-top: 60px;
+}
+
+.rect_shap {
+  background: var(--color-primary);
+  height: 75px;
+  max-width: 270px;
+  opacity: 0.9;
+  transform: rotate(-11deg) translate(0, -60px);
+}
+
+.sol_shot > .trianlge {
+  position: absolute;
+  top: -70px;
+  z-index: -1;
+  mix-blend-mode: luminosity;
+}

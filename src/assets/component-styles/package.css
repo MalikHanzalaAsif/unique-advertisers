@@ -1,0 +1,233 @@
+.package_card {
+  overflow: hidden;
+  width: 380px;
+  --radius: 10px;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  border: 0;
+}
+
+.package_header {
+  background-image: linear-gradient(
+    0deg,
+    rgb(0, 140, 228) 0%,
+    rgb(1, 32, 107) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    0deg,
+    rgb(0, 140, 228) 0%,
+    rgb(1, 32, 107) 100%
+  );
+  background-image: -moz-linear-gradient(
+    0deg,
+    rgb(0, 140, 228) 0%,
+    rgb(1, 32, 107) 100%
+  );
+  background-image: -ms-linear-gradient(
+    0deg,
+    rgb(0, 140, 228) 0%,
+    rgb(1, 32, 107) 100%
+  );
+  position: relative;
+}
+
+.package_header > div {
+  padding: 30px;
+}
+
+/* .package_card:nth-child(even) > .package_header { */
+.package_card:nth-child(3n + 2) > .package_header {
+  background-image: linear-gradient(
+    0deg,
+    rgb(253, 200, 3) 0%,
+    rgb(173, 159, 36) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    0deg,
+    rgb(253, 200, 3) 0%,
+    rgb(173, 159, 36) 100%
+  );
+  background-image: -moz-linear-gradient(
+    0deg,
+    rgb(253, 200, 3) 0%,
+    rgb(173, 159, 36) 100%
+  );
+  background-image: -ms-linear-gradient(
+    0deg,
+    rgb(253, 200, 3) 0%,
+    rgb(173, 159, 36) 100%
+  );
+}
+
+/* .package_card:nth-child(odd):not(:first-child) > .package_header { */
+.package_card:nth-child(3n + 3) > .package_header {
+  background-image: linear-gradient(
+    0deg,
+    rgb(4, 217, 203) 0%,
+    rgb(22, 111, 109) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    0deg,
+    rgb(4, 217, 203) 0%,
+    rgb(22, 111, 109) 100%
+  );
+  background-image: -moz-linear-gradient(
+    0deg,
+    rgb(4, 217, 203) 0%,
+    rgb(22, 111, 109) 100%
+  );
+  background-image: -ms-linear-gradient(
+    0deg,
+    rgb(4, 217, 203) 0%,
+    rgb(22, 111, 109) 100%
+  );
+}
+
+.package_header::before {
+  content: "";
+  background-image: url(../images/package-grad-1.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
+
+.package_card:nth-child(3n + 2) > .package_header::before {
+  background-image: url(../images/package-grad-2.png);
+}
+.package_card:nth-child(3n + 3) > .package_header::before {
+  background-image: url(../images/package-grad-3.png);
+}
+
+.package_header {
+  color: #000;
+}
+
+.package_card:nth-child(3n + 1) .package_header {
+  color: #fff;
+}
+
+.package_header h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.pricing {
+  font-size: 50px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pricing small {
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+}
+.pricing small::before {
+  content: "";
+  border: 1px dashed black;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 46%;
+  left: 1px;
+}
+
+.projects_sec * {
+  mix-blend-mode: unset;
+}
+
+.package_header {
+  padding: 0;
+}
+
+.package_list > li {
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+
+.package_list > li > svg {
+  color: #fbc704;
+  fill: #fbc704;
+  font-size: 18px;
+}
+
+.package_list {
+  margin-bottom: 15px;
+  padding-top: 12px;
+}
+
+.package_list:last-child {
+  margin-bottom: 0;
+}
+
+.package_features h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.package_features > div {
+  padding: 20px;
+}
+
+.order_btn {
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+.order_btn > button {
+  color: #000;
+}
+
+div[role="dialog"] svg {
+  fill: #000;
+}
+
+.order_btn {
+  border-radius: 0;
+  width: 100%;
+}
+.package_features > div:nth-child(1) ul {
+  height: 200px;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 0.3em;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  /* outline: 1px solid var(--color-secondary); */
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .tab_bar {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .package_card {
+    width: 100%;
+  }
+  .package_header h3 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,12 @@
+.deat_img img {
+  animation: move_detail_cover infinite 20s linear alternate;
+}
+
+@keyframes move_detail_cover {
+  from {
+    object-position: left;
+  }
+  to {
+    object-position: right;
+  }
+}
