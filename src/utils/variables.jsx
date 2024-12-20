@@ -35,8 +35,8 @@ export const VARIABLES = {
 };
 
 export const SOCIAL_LINKS = {
-  INSTA:
-    "https://www.instagram.com/unique_._advertisers?igsh=MTUyMHB4czN2ZWxsbg==",
+  INSTA: "https://www.instagram.com/unique_._advertisers?igsh=MTUyMHB4czN2ZWxsbg==",
   FB: "https://www.facebook.com/UniqueAdvertisers0?mibextid=ZbWKwL",
-  TWEETER: "",
+  TWEETER: "https://x.com/houseua0154333",
+  BEHANCE: "https://www.behance.net/productionhouseua",
 };

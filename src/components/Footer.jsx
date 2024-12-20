@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import logo from "/images/services/logo.webp";
 import OverlayTop from "/images/services/overlay-footer-top.webp";
 import OverlayBottom from "/images/services/overlay-footer-bottom.webp";
-import { FaXTwitter, FaInstagram, FaFacebookF } from "react-icons/fa6";
+import { FaXTwitter, FaInstagram, FaFacebookF, FaBehance } from "react-icons/fa6";
 import { SOCIAL_LINKS, VARIABLES } from "@/utils/variables";
 import { ROUTES } from "@/routes";
 
@@ -57,7 +57,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="leading-loose">
-                    <a href="/" target="_blank" rel="noopener nofollow">
+                    <a href={SOCIAL_LINKS.TWEETER} target="_blank" rel="noopener nofollow">
                       <FaXTwitter />
                     </a>
                   </li>
@@ -68,6 +68,15 @@ const Footer = () => {
                       rel="noopener nofollow"
                     >
                       <FaFacebookF />
+                    </a>
+                  </li>
+                  <li className="leading-loose">
+                    <a
+                      href={SOCIAL_LINKS.BEHANCE}
+                      target="_blank"
+                      rel="noopener nofollow"
+                    >
+                      <FaBehance />
                     </a>
                   </li>
                 </ul>
@@ -144,6 +153,10 @@ const quickLinks = [
     title: "Contact Us",
     link: "/contact",
   },
+  {
+    title: "Privacy Policy",
+    link: "/privacy-policy"
+  }
 ];
 
 const servLinks = [

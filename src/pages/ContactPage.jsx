@@ -5,7 +5,7 @@ import { FaEnvelopesBulk } from "react-icons/fa6";
 import { BsTelephoneFill } from "react-icons/bs";
 import { IoLocation } from "react-icons/io5";
 import { Button } from "@/components/ui/button";
-import { FaXTwitter, FaInstagram, FaFacebookF } from "react-icons/fa6";
+import { FaXTwitter, FaInstagram, FaFacebookF, FaBehance } from "react-icons/fa6";
 import Contactform from "@/components/Contactform";
 import { VARIABLES } from "@/utils/variables";
 
@@ -50,7 +50,7 @@ const ContactForm = () => {
             style={{ fontSize: 30 }}
           >
             <li className="leading-loose">
-              <a href="/" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/houseua0154333" target="_blank" rel="noopener noreferrer">
                 {" "}
                 <FaXTwitter />{" "}
               </a>
@@ -65,6 +65,12 @@ const ContactForm = () => {
               <a href="https://www.facebook.com/UniqueAdvertisers0?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                 {" "}
                 <FaFacebookF />{" "}
+              </a>
+            </li>
+            <li className="leading-loose">
+              <a href="https://www.behance.net/productionhouseua" target="_blank" rel="noopener noreferrer">
+                {" "}
+                <FaBehance />{" "}
               </a>
             </li>
           </ul>

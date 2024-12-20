@@ -15,7 +15,7 @@ import { FileX } from "lucide-react";
 
 const ReviewData = [
   {
-    name: "John Doe",
+    name: "Trevor Warner",
     remarks:
       "With their logo design services, Unique Advertisers went above and beyond what we expected. They made the effort to comprehend our business concept and created a logo that flawlessly captures it. Our new logo has garnered a lot of positive feedback and has greatly improved our brand's visibility.",
     category: "branding",
@@ -39,7 +39,7 @@ const ReviewData = [
     headshot: reviewHeadShot3,
   },
   {
-    name: "Michael Brown",
+    name: "Kylie Whiteman",
     remarks:
       "The video animation services provided by Unique Advertisers have really made our brand come to life. Their skilled team produced engrossing animations that successfully convey our message and connect with our target audience. We have been able to stand out in a congested digital arena and increase meaningful brand engagement thanks to the animations.s",
     category: "branding",

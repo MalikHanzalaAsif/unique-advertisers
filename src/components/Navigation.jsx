@@ -36,6 +36,10 @@ const navlinks = [
     title: "Testimonials",
     link: "testimonials",
   },
+  {
+    title: "Contact",
+    link: "/contact"
+  }
 ];
 
 // Define the NavigationMenuDemo component
