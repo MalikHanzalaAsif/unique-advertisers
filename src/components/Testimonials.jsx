@@ -55,6 +55,7 @@ const Testimonials = () => {
       {Array.from({ length: 5 }).map((_, index) => {
         return (
           <img
+            key={index}
             src={IMAGES.SERVICE.ANIMATION + (index + 1) + IMAGE_FORMAT.WEBP}
             alt=""
           />

@@ -24,7 +24,7 @@ export const ScrollToTop = () => {
 
 export const App = () => {
   const auth = useSelector((state) => state.auth);
-  console.log("testing");
+  // console.log("testing");
   return (
     <>
       <main id="app">

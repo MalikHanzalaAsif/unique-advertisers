@@ -35,6 +35,7 @@ const Contactform = ({ title, price }) => {
     },
     validationSchema: packageValidations,
     onSubmit: async (data) => {
+      console.log("Submitting data:", data);
       setLoading(true);
       const { name, email, phone, msg } = data;
 
@@ -51,7 +52,7 @@ const Contactform = ({ title, price }) => {
       const res = await formApi(formId, formData);
 
       if (res) {
-        // console.log(res);
+        console.log(res);
         setLoading(false);
       }
 
@@ -137,7 +138,7 @@ const Contactform = ({ title, price }) => {
         </div>
       </div>
       <Button
-        type={"submit"}
+        type="submit"
         className={`mt-10 w-full
             ${
               isLoading
