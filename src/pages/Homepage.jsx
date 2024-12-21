@@ -68,7 +68,7 @@ const Hero = () => {
           <section className="grid lg:grid-cols-2 gap-0 lg:gap-6 text-center lg:text-start">
             <div className="flex flex-col justify-center mb-28 order-2 lg:order-1">
               <h1 className="heading">
-                We Are{" "}
+                We Are a{" "}
                 <span
                   className="bg_heading"
                   style={{ color: "var(--color-primary)" }}
@@ -80,19 +80,16 @@ const Hero = () => {
                   className="bg_heading"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  Agency
+                  Marketing
                 </span>{" "}
-                Studio
+                & Creative Agency
               </h1>
               <p className="py-8 leading-8">
-                Unique Advertisers: Your one-stop shop for digital solutions
-                include Twitch packages, design, SEO, and marketing. Join forces
-                with us to leverage innovation and much more for your online
-                success.
+              Unique Advertisers: Amazing you with all of your digital requirements indulging Twitch Designs, SEO’s, UI/UX Design, Website Development and Social Media Marketing. Feel free to sweep through and get all your requirements done under one roof.
               </p>
               <div>
                 <NavLink className="cta glow" to="/contact">
-                  <Button>Lets Talk</Button>
+                  <Button>Schedule Your Call</Button>
                 </NavLink>
               </div>
             </div>
@@ -132,6 +129,8 @@ const About = () => {
     "Money Back Guarantee",
     "Customer Satisfaction",
     "24/7 Support",
+    "Top Tier Digital Marketing",
+    "Supportive team"
   ];
   return (
     <main className="about_sec relative mx-auto" id="aboutSec">
@@ -153,8 +152,7 @@ const About = () => {
                 </span>
               </h2>
               <p className="py-8 leading-8">
-                Your top digital partner, Unique Advertisers, is committed to
-                transforming the internet market.
+              Be our partner in digital creations here at Unique Advertisers, Where with your imagination and our execution, we can create the perfect fallout.
               </p>
               <div className="icon_list pb-8">
                 <ul className="grid sm:grid-cols-2">
@@ -179,7 +177,7 @@ const About = () => {
               </div>
               <div>
                 <NavLink className="cta glow" to="/about">
-                  <Button>Get Started Now</Button>
+                  <Button>Get In Touch</Button>
                 </NavLink>
               </div>
               <div className="arrow_swing hidden md:block">
