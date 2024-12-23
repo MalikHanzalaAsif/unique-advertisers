@@ -23,12 +23,11 @@ export default PrivacyPolicyPage;
 
 const PrivacyText = () => {
     return (
-
         <main className="container py-[30px] md:py-[40px] lg:py-[80px]">
 
             <div className="pra_div">
 
-                <p className="leading-8">
+                <p className="leading-8 text-center text-xl">
                     Welcome to <b>Unique Advertisers!</b> This Privacy Policy explains how we collect, use, disclose, and protect information we gather from clients, users, and visitors through our website, services, and platforms. By using our services, you agree to the terms outlined in this policy.
                 </p>
             </div>

@@ -43,7 +43,7 @@ export default AboutPage;
 
 const AboutBannerImage = () => {
   return (
-    <div className="flex lg:justify-end justify-center">
+    <div className="flex lg:justify-center justify-center">
       <img
         className="w-[70%]"
         src={AboutBanner}

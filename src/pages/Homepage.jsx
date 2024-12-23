@@ -316,7 +316,7 @@ export const SolutionsTabs = () => {
     },
     {
       title: "Video Animation",
-      desc: "Capture attention with our engaging video animations. From explainer videos to promotional content, our talented team blends creativity with technology to deliver memorable visual experiences.",
+      desc: "Bring ideas to life with stunning animations—explained videos, promos, and presentations crafted to leave a lasting impression.",
       link: "/services/animation",
     },
     {
