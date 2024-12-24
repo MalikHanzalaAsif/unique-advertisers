@@ -171,14 +171,14 @@ export function PackageTabs({ activeService }) {
   return (
     <>
       {!activeService ? (
-        <div className="tab_bar flex justify-center mb-14">
+        <div className="tab_bar flex justify-center mb-14 flex-wrap">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={`tabs_btn ${
                 activeTab === tab.id ? "active_tab" : " hover:text-white/60"
-              } relative px-8 text-white outline-sky-400 transition focus-visible:outline-2 uppercase`}
+              } relative px-8 text-white outline-sky-400 transition focus-visible:outline-2 uppercase mb-4`}
               style={{
                 WebkitTapHighlightColor: "transparent",
               }}
@@ -569,7 +569,7 @@ const TabsData = ({ activeTab }) => {
         addon: ["FREE Google Friendly Sitemap"],
       },
       {
-        title: "Paltinum",
+        title: "Platinum",
         list: [
           "1x mascot logo",
           "3x banner",
@@ -640,6 +640,224 @@ const TabsData = ({ activeTab }) => {
         ],
         price: "$800",
         addon: ["FREE Google Friendly Sitemap"],
+      },
+    ];
+  } else if (activeTab === "smm") {
+    packageData = [
+      {
+        title: "Start Up Plan",
+        list: [
+          "3 social media Channels",
+          "(FB,INSTA,X) Social media Account Setup",
+          "Complete Account Management",
+          "3 Post per week",
+          "Custom Editorial Calendar",
+          "End of Term Analytic Report",
+          "Dedicated Account Manger",
+          "PAID ADVETIDEMENT ON (FB,INSTA,X)",
+        ],
+        price: "$399",
+        addon: ["Best Value for Money Guaranteed!"],
+      },
+      {
+        title: "Basic Plan",
+        list: [
+          "4 social media Channels",
+          "(FB,INSTA,X,Tiktok) Social media Account Setup",
+          "Complete Account Management",
+          "5 Post per week",
+          "Custom Editorial Calendar",
+          "Call to Action Integration",
+          "Dedicated Account Manger",
+          "Monthly Analytic Report",
+          "Custom Blog Submission per Week",
+          "Social media Competitor Analysis",
+          "PAID ADVETIDEMENT ON (FB,INSTA,X,Tiktok)",
+        ],
+        price: "$749",
+        addon: ["Best Value for Money Guaranteed!"],
+      },
+      {
+        title: "Platinum Plan",
+        list: [
+          "5 social media Channels",
+          "(FB,INSTA,X,Tiktok,Linkdin) Social media Account Setup",
+          "Complete Account Management",
+          "7 Post per week",
+          "Custom Editorial Calendar",
+          "Call to Action Integration",
+          "Dedicated Account Manger",
+          "Monthly Analytic Report",
+          "3 Custom Blog Submission per Week",
+          "Social media Competitor Analysis",
+          "PAID ADVETIDEMENT ON (FB,INSTA,X,Tiktok)",
+        ],
+        price: "$999",
+        addon: ["Best Value for Money Guaranteed!"],
+      },
+    ];
+  } else if (activeTab === "emailMarketing") {
+    packageData = [
+      {
+        title: "Start Up Plan",
+        list: [
+          "A/B Testing",
+          "Forms and Landing pages",
+          "Behavioral Targeting",
+          "Advanced Segmentation",
+          "Monthly Email Sends :15000",
+          "Lead Generation Included",
+          "Dynamic Content",
+        ],
+        price: "$599",
+        addon: ["Best Value for Money Guaranteed!"],
+      },
+      {
+        title: "Gold Plan",
+        list: [
+          "A/B Testing",
+          "Forms and Landing pages",
+          "Behavioral Targeting",
+          "Advanced Segmentation",
+          "Monthly Email Sends :30000",
+          "Lead Generation Included",
+          "Dynamic Content",
+        ],
+        price: "$999",
+        addon: ["Best Value for Money Guaranteed!"],
+      },
+      {
+        title: "Platinum Plan",
+        list: [
+          "A/B Testing",
+          "Forms and Landing pages",
+          "Behavioral Targeting",
+          "Advanced Segmentation",
+          "Monthly Email Sends Unlimited",
+          "Lead Generation Included",
+          "Dynamic Content",
+        ],
+        price: "$999",
+        addon: ["Best Value for Money Guaranteed!"],
+      },
+    ];
+  } else if (activeTab === "seo") {
+    packageData = [
+      {
+        title: "Silver Plan",
+        list: [
+          "In depth Site Analysis",
+          "Content duplicacy check",
+          "Initial Backlinks Analysis",
+          "Keyword Research",
+          "Keyword Plan 20",
+          "Title and Meta Tags Optimization",
+          "Content Optimization",
+          "HTML Code Cleanup and optimization",
+          "Internal Link Structuring and optimization",
+          "Google and Bing Webmaster Tools Setup",
+          "Google Analytics Setup and Integration",
+          "Content and Link Acquisition",
+          "Blog Writing -1",
+          "Classified submissions",
+          "Search Engine Rank Report",
+        ],
+        price: "$399",
+        addon: ["Best Value for Money Guaranteed!"],
+      },
+      {
+        title: "Gold Plan",
+        list: [
+          "In depth Site Analysis",
+          "Content duplicacy check",
+          "Initial Backlinks Analysis",
+          "Keyword Research",
+          "Keyword Plan 30",
+          "Title and Meta Tags Optimization",
+          "Content Optimization",
+          "HTML Code Cleanup and optimization",
+          "Internal Link Structuring and optimization",
+          "Google and Bing Webmaster Tools Setup",
+          "Google Analytics Setup and Integration",
+          "Content and Link Acquisition",
+          "Blog Writing -2",
+          "Classified submissions",
+          "Search Engine Rank Report",
+        ],
+        price: "$499",
+        addon: ["Best Value for Money Guaranteed!"],
+      },
+      {
+        title: "Platinum Package",
+        list: [
+          "In depth Site Analysis",
+          "Content duplicacy check",
+          "Initial Backlinks Analysis",
+          "Keyword Research",
+          "Keyword Plan 45",
+          "Title and Meta Tags Optimization",
+          "Content Optimization",
+          "HTML Code Cleanup and optimization",
+          "Internal Link Structuring and optimization",
+          "Google and Bing Webmaster Tools Setup",
+          "Google Analytics Setup and Integration",
+          "Content and Link Acquisition",
+          "Blog Writing",
+          "Classified submissions",
+          "Search Engine Rank Report",
+        ],
+        price: "$599",
+        addon: ["Best Value for Money Guaranteed!"],
+      },
+    ];
+  } else if (activeTab === "googleAds") {
+    packageData = [
+      {
+        title: "Silver Plan",
+        list: [
+          "1:1 sessions with a PPC strategist",
+          "PPC account creation (i.e: Google Ads, FBM)",
+          "Dedicated slack channel",
+          "Access to academy PPC content",
+          "Access to exclusive PPC tools",
+        ],
+        price: "Starting from $699",
+        addon: ["Best Value for Money Guaranteed!"],
+      },
+      {
+        title: "Gold Plan",
+        list: [
+          "1:1 sessions with a PPC strategist",
+          "PPC account creation (i.e: Google Ads, FBM)",
+          "Dedicated slack channel",
+          "Access to academy PPC content",
+          "Access to exclusive PPC tools",
+          "PPC performance support and management",
+          "Customized PPC KPI dashboard",
+          "Coordination and management of your internal team",
+          "Paid media budget management",
+        ],
+        price: "Starting from $1999",
+        addon: ["Best Value for Money Guaranteed!"],
+      },
+      {
+        title: "Platinum Package",
+        list: [
+          "1:1 sessions with a PPC strategist",
+          "PPC account creation (i.e: Google Ads, FBM)",
+          "Dedicated slack channel",
+          "Access to academy PPC content",
+          "Access to exclusive PPC tools",
+          "PPC performance support and management",
+          "Customized PPC KPI dashboard",
+          "Coordination and management of your internal team",
+          "Paid media budget management",
+          "Turnkey managed PPC service",
+          "Dedicated production team",
+          "Development of digital assets (content creation, landing pages, a/b tests, custom PPC scripts, AI, studio, etc.)",
+        ],
+        price: "Starting from $4999",
+        addon: ["Best Value for Money Guaranteed!"],
       },
     ];
   } else {
@@ -921,5 +1139,30 @@ let tabs = [
     id: "stream",
     label: "Streamers Templates",
     description: <TabsData activeTab={"stream"} />,
+  },
+  {
+    id: "appDev",
+    label: "App Development",
+    description: <TabsData activeTab={"appDev"} />,
+  },
+  {
+    id: "smm",
+    label: "Social Media Marketing",
+    description: <TabsData activeTab={"smm"} />,
+  },
+  {
+    id: "emailMarketing",
+    label: "Email Marketing",
+    description: <TabsData activeTab={"emailMarketing"} />,
+  },
+  {
+    id: "seo",
+    label: "Search Engine Optimization",
+    description: <TabsData activeTab={"seo"} />,
+  },
+  {
+    id: "googleAds",
+    label: "Google Ads",
+    description: <TabsData activeTab={"googleAds"} />,
   },
 ];

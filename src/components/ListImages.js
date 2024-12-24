@@ -90,18 +90,18 @@ export const Images = {
 
   // Graphic Logo Images
   LogoShotOne: "/images/services/logo-1.jpg",
-  LogoShotTwo: "/images/services/logo-2.jpg",
+  LogoShotTwo: "/images/services/logo-2.jpeg",
   LogoShotThree: "/images/services/logo-3.png",
   LogoShotFour: "/images/services/logo-4.jpg",
   LogoShotFive: "/images/services/logo-5.jpeg",
   LogoShotSix: "/images/services/logo-6.webp",
   LogoShotSeven: "/images/services/logo-7.webp",
-  LogoShotEight: "/images/services/logo-8.jpeg",
-  LogoShotNine: "/images/services/logo-9.webp",
+  LogoShotEight: "/images/services/logo-8.jpg",
+  LogoShotNine: "/images/services/logo-9.png",
   LogoShotTen: "/images/services/logo-10.webp",
   LogoShotEleven: "/images/services/logo-11.jpeg",
   LogoShotTwelve: "/images/services/logo-12.jpeg",
-  LogoShotThirteen: "/images/services/logo-13.webp",
+  LogoShotThirteen: "/images/services/logo-13.jpg",
   LogoShotFouteen: "/images/services/logo-14.jpeg",
   LogoShotFifteen: "/images/services/logo-15.jpeg",
 

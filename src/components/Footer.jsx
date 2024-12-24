@@ -86,7 +86,7 @@ const Footer = () => {
         </main>
         <section id="copyright" className="bg-black py-5">
           <h6 className="text-center">
-            © 2022 - {currentYear} | Alrights reserved by Unique Advertisers
+            © 2022 - {currentYear} | All rights reserved by Unique Advertisers
           </h6>
         </section>
         <div className="absolute bottom-16 left-0 pointer-events-none">

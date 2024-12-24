@@ -316,36 +316,36 @@ const TabsData = ({ activeTab }) => {
       {
         type: "image",
         imgSrc: "LogoShotThirteen",
-        projectTitle: "Mariana",
+        projectTitle: "Black Dragon Academy",
         projectDesc:
-          "A personalized 'Mariana' logo for your website offering services exudes style and expertise. Its elegant color scheme and clean typography provide a sense of dependability and credibility, making it the ideal visual identity to draw in and hold the attention of your target audience.",
+          'A bold logo featuring a black dragon on a red circular background with Torii gates. "Black Dragon Academy" is displayed prominently, with martial artist silhouettes below, symbolizing strength, tradition, and discipline.',
       },
       {
         type: "image",
         imgSrc: "LogoShotTwo",
-        projectTitle: "Global Solar",
+        projectTitle: "PEGASUS REAL ESTATE",
         projectDesc:
-          "For your website offering services, a personalized logo called 'Global Solar' combines elements of sustainability and innovation. With its sun-inspired design and vivid green colors, it represents the company's dedication to modern technology and renewable energy, making it a perfect logo to highlight experience in the manufacturing of solar panels.",
+          'The logo features a golden Pegasus rearing in front of a stylized house, symbolizing strength, elegance, and freedom. "PEGASUS REAL ESTATE" is displayed in bold gold lettering, with a sleek, luxurious design that conveys prestige and reliability.',
       },
       {
         type: "image",
         imgSrc: "LogoShotThree",
-        projectTitle: "Graffiti-inspired Design",
+        projectTitle: "Dr Cell",
         projectDesc:
-          "A logo for your service-oriented website with a graffiti-inspired design radiates originality and urban style. It appeals to a young, dynamic audience and stands out as a sign of unusual service excellence with its strong, dynamic lines and brilliant colors that embody the spirit of innovation and modernity.",
+          'The "DrCell" logo features an open capsule with natural elements and particles, symbolizing health, growth, and innovation. Bold, clean typography and a minimalistic design reflect professionalism in the skincare and health sector.',
       },
       {
         type: "image",
         imgSrc: "LogoShotEight",
-        projectTitle: "Gyan Sutra",
+        projectTitle: "The Blingess",
         projectDesc:
-          "A logo for 'Gyan Sutra' for your website that offers services combines knowledge and technology. It emphasizes knowledge and innovation with its subtle tech features and elegant, modern font. The design is indicative of an advanced method of providing services, making it appealing to tech-savvy consumers looking for knowledge and dependability in digital solutions.",
+          'An elegant logo featuring a posed silhouette in a flowing gown, framed by pink floral swirls. "The Blingess" is written in stylish cursive, exuding sophistication and charm.',
       },
       {
         type: "image",
         imgSrc: "LogoShotNine",
-        projectTitle: "",
-        projectDesc: "",
+        projectTitle: "NATHAN DRAKE0520",
+        projectDesc: 'The logo features an electrified anime character with a golden aura and bold metallic text "NATHAN DRAKE0520." The intense design and dynamic background convey power, energy, and excitement, reflecting a gaming or action-focused brand.',
       },
     ];
   }
