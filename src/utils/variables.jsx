@@ -10,7 +10,7 @@ export const VARIABLES = {
   FULL_NAME: "your-name",
   NAME: "name",
   NAME_PLACEHOLDER: "Your Full Name",
-  PHONE: "phone",
+  PHONE_NAME: "phone", // CHANGED THIS TO SEND PHONE NUMBER CORRECTLY
   PHONE_PLACEHOLDER: "Phone Number",
   MESSAGE: "msg",
   MESSAGE_PLACEHOLDER: "Type your message here...",

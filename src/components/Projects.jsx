@@ -362,7 +362,6 @@ const TabsData = ({ activeTab }) => {
     }
   };
 
-  console.log(projectShots);
   return (
     <>
       <div className="tab_shots">

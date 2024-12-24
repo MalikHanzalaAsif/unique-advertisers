@@ -35,7 +35,6 @@ const Contactform = ({ title, price }) => {
     },
     validationSchema: packageValidations,
     onSubmit: async (data) => {
-      console.log("Submitting data:", data);
       setLoading(true);
       const { name, email, phone, msg } = data;
 
@@ -43,7 +42,7 @@ const Contactform = ({ title, price }) => {
       formData.append(VARIABLES.CF7_UNIT_TAG, formId);
       formData.append(VARIABLES.FULL_NAME, name);
       formData.append(VARIABLES.EMAIL, email);
-      formData.append(VARIABLES.PHONE, phone);
+      formData.append(VARIABLES.PHONE_NAME, phone); // CHANGED THIS TO SEND PHONE NUMBER CORRECTLY
       formData.append(VARIABLES.MESSAGE, msg);
       if (title) {
         formData.append(VARIABLES.PACKAGE_TITLE, title);
@@ -52,12 +51,11 @@ const Contactform = ({ title, price }) => {
       const res = await formApi(formId, formData);
 
       if (res) {
-        console.log(res);
         setLoading(false);
       }
 
       if (res.status >= 200 && res.status <= 300) {
-        return redirect(ROUTES.THANK_YOU);
+        return navigate(ROUTES.THANK_YOU); // CHNAGED THIS TO REDIRECT TO THANK YOU PAGE CORRECTLY
       }
     },
   });
@@ -71,6 +69,7 @@ const Contactform = ({ title, price }) => {
     touched,
     setFieldValue,
   } = formik;
+
 
   const renderValues = (id, type, placeholder) => {
     return (
@@ -91,7 +90,7 @@ const Contactform = ({ title, price }) => {
   };
 
   const handlePhoneValue = (phoneValue) => {
-    setFieldValue(VARIABLES.PHONE, phoneValue);
+    setFieldValue(VARIABLES.PHONE_NAME, phoneValue); // CHANGED THIS TO SET PHONE NUMBER CORRECTLY
   };
 
   return (
@@ -111,9 +110,10 @@ const Contactform = ({ title, price }) => {
         ]}
         <PhoneInput
           handlePhoneValue={handlePhoneValue}
-          errors={touched[VARIABLES.PHONE] && errors[VARIABLES.PHONE]}
+          errors={touched[VARIABLES.PHONE_NAME] && errors[VARIABLES.PHONE_NAME]} // CHANGED THIS TO SHOW PHONE NUMBER ERROR CORRECTLY
           onBlur={handleBlur}
-          id={VARIABLES.PHONE}
+          id={VARIABLES.PHONE_NAME} // CHANGED THIS TO SEND PHONE NUMBER CORRECTLY
+          onChange={handleChange}
         />
         <div className="relative">
           <Textarea
@@ -125,9 +125,8 @@ const Contactform = ({ title, price }) => {
             value={values[VARIABLES.MESSAGE]}
             onChange={handleChange}
             onBlur={handleBlur}
-            className={`bg-transparent hover:border-amber-600 focus:border-primary focus-visible:ring-2 focus-visible:ring-offset-0 focus-visible:ring-transparent focus-visible:ring-offset-transparent resize-none${
-              isBgTransparent && "text-white"
-            }`}
+            className={`bg-transparent hover:border-amber-600 focus:border-primary focus-visible:ring-2 focus-visible:ring-offset-0 focus-visible:ring-transparent focus-visible:ring-offset-transparent resize-none${isBgTransparent && "text-white"
+              }`}
             style={!isBgTransparent ? { color: "#000" } : {}}
           />
           {touched[VARIABLES.MESSAGE] && errors[VARIABLES.MESSAGE] && (
@@ -140,11 +139,10 @@ const Contactform = ({ title, price }) => {
       <Button
         type="submit"
         className={`mt-10 w-full
-            ${
-              isLoading
-                ? "bg-black text-white"
-                : "hover:bg-secondary hover:text-white"
-            }`}
+            ${isLoading
+            ? "bg-black text-white"
+            : "hover:bg-secondary hover:text-white"
+          }`}
         disabled={isLoading}
       >
         {isLoading ? "Submitting... " : "Submit"}

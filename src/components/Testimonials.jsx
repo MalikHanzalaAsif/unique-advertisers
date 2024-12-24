@@ -49,7 +49,6 @@ const ReviewData = [
 ];
 
 const Testimonials = () => {
-  console.log(IMAGES.SERVICE.ANIMATION + "1." + IMAGE_FORMAT.WEBP);
   return (
     <main className="testimonials_sec relative mx-auto bg-black overflow-hidden pb-36 px-5">
       {Array.from({ length: 5 }).map((_, index) => {
