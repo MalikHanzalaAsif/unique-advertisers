@@ -8,7 +8,7 @@ import { MdInput } from "react-icons/md";
 // TODO: Fulfill the data according to document it is just dummy.
 export const webServiceData = {
   currentTab: "website",
-  serivceBannerHeading: "Web & Mobile Development",
+  serivceBannerHeading: "Web Development",
   serviceSubheading: "",
   infoServiceTitle: "Web Design",
   infoServiceDesc:
@@ -358,11 +358,11 @@ export const brandingServiceData = {
 // TODO: Fulfill the data according to document it is just dummy.
 export const marketingServiceData = {
   currentTab: "social",
-  serivceBannerHeading: "Digital Marketing",
+  serivceBannerHeading: "Social Media Marketing",
   serviceSubheading: "",
-  infoServiceTitle: "Digital Marketing",
+  infoServiceTitle: "Social Media Marketing",
   infoServiceDesc:
-    " With our planned digital marketing services, you may maximize your online presence and achieve results. We provide tailored plans to reach your target audience and meet your company goals, ranging from email campaigns and social media marketing to pay-per-click (PPC) advertising and search engine optimization (SEO). ",
+    " With Unique Advertisers' strategic social media marketing services, you can elevate your online presence and achieve impactful results. We create customized strategies to engage your target audience and help you meet your business objectives, including content creation, social media campaigns, paid ads, and detailed performance analysis. ",
   infoServiceImage: "MarketingShotTwo",
   cardContent: [
     {
@@ -371,17 +371,17 @@ export const marketingServiceData = {
       boxContent: "",
     },
   ],
-  serviceDetailsTitle: "Digital Marketing",
+  serviceDetailsTitle: "Social Media Marketing",
   serviceDetailsDesc:
-    "With our planned digital marketing services, you may maximize your online presence and achieve results. We provide tailored plans to reach your target audience and meet your company goals, ranging from email campaigns and social media marketing to pay-per-click (PPC) advertising and search engine optimization (SEO).",
+    " At Unique Advertisers, we specialize in crafting impactful social media strategies that engage and grow your audience. Our expert team leverages the latest trends and tools to create content that resonates with your target market, ensuring increased visibility and meaningful connections. ",
   serviceDetailsImage: "MarketingShotFouteen",
   serviceIconList: [
     {
-      title: "Share your vision",
+      title: "Share your story",
       icon: <FaArrowsToEye />,
     },
     {
-      title: "Weave the Magic",
+      title: "Your Voice Amplified",
       icon: <FaMagic />,
     },
   ],
@@ -549,6 +549,71 @@ export const StreamersServiceData = {
       src: "MarketingShotFifteen",
       width: 500,
       height: 400,
+    },
+  ],
+};
+
+export const AppServiceData = {
+  currentTab: "appDev",
+  serivceBannerHeading: "App Development",
+  serviceSubheading: "",
+  infoServiceTitle: "App Development",
+  infoServiceDesc:
+    "At Unique Advertisers, we specialise in creating visually appealing, dynamic websites that are simple to use and retain. Our talented development team uses the most recent technology to craft unique websites that are tailored to your unique requirements, ensuring perfect operation and an exceptional user experience.",
+  infoServiceImage: "WebsiteShotOne",
+  cardContent: [
+    {
+      boxLogo: "",
+      boxTitle: "",
+      boxContent: "",
+    },
+  ],
+  serviceDetailsTitle: "App Development",
+  serviceDetailsDesc:
+    "Our specialty at Unique Advertisers is building captivating, dynamic websites that are easy to navigate and remember. Using the newest technology, our skilled development team creates custom websites that are suited to your specific needs, guaranteeing flawless operation and an outstanding user experience.",
+  serviceDetailsImage: "WebsiteShotSeven",
+  serviceIconList: [
+    {
+      title: "Share your vision",
+      icon: <FaArrowsToEye />,
+    },
+    {
+      title: "Weave the Magic",
+      icon: <FaMagic />,
+    },
+    {
+      title: "Your Input Matters",
+      icon: <MdInput />,
+    },
+  ],
+};
+export const seoServiceData = {
+  currentTab: "seo",
+  serivceBannerHeading: "Search Engine Optimization",
+  serviceSubheading: "",
+  infoServiceTitle: "Search Engine Optimization",
+  infoServiceDesc:
+    " At Unique Advertisers, we use a comprehensive SEO strategy to improve your website's visibility and drive organic traffic. By focusing on both on-page and off-page techniques, we help increase your Google rankings, target high-traffic keywords, and boost your local and national presence, ensuring sustainable growth and more customers. ",
+  infoServiceImage: "seoShot1",
+  cardContent: [
+    {
+      boxLogo: "",
+      boxTitle: "",
+      boxContent: "",
+    },
+  ],
+  serviceDetailsTitle: "Search Engine Optimization",
+  serviceDetailsDesc:
+    " At Unique Advertisers, SEO is the key to unlocking your website’s potential. We focus on optimizing your content, keywords, and website structure to improve rankings and drive organic traffic. Our approach ensures your brand reaches the right audience, leading to sustained growth and higher conversions. ",
+  serviceDetailsImage: "seoShot2",
+  serviceIconList: [
+    {
+      title: "Create the Impact",
+      icon: <FaArrowsToEye />,
+    },
+    {
+      title: "Bring Your Ideas to Life",
+      icon: <FaMagic />,
     },
   ],
 };

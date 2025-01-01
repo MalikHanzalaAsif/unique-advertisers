@@ -10,7 +10,7 @@ const videos = [
     poster: Images.StreamersVedioOne,
     sources: [
       {
-        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2024/07/animation-video-1.mp4",
+        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2025/01/animation-1.mp4",
         type: "video/mp4",
       },
     ],
@@ -23,7 +23,7 @@ const videos = [
     poster: Images.StreamersVedioOne,
     sources: [
       {
-        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2024/07/animation-video-2.mp4",
+        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2025/01/animation-2.mp4",
         type: "video/mp4",
       },
     ],
@@ -36,7 +36,7 @@ const videos = [
     poster: Images.StreamersVedioOne,
     sources: [
       {
-        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2024/07/animation-video-3.mp4",
+        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2025/01/animation-3.mp4",
         type: "video/mp4",
       },
     ],
@@ -49,7 +49,7 @@ const videos = [
     poster: Images.StreamersVedioOne,
     sources: [
       {
-        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2024/07/animation-video-4.mp4",
+        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2025/01/animation-4.mp4",
         type: "video/mp4",
       },
     ],
@@ -62,7 +62,7 @@ const videos = [
     poster: Images.StreamersVedioOne,
     sources: [
       {
-        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2024/07/animation-video-5.mp4",
+        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2025/01/animation-5.mp4",
         type: "video/mp4",
       },
     ],
@@ -75,7 +75,7 @@ const videos = [
     poster: Images.StreamersVedioOne,
     sources: [
       {
-        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2024/07/animation-video-5.mp4",
+        src: "https://api.uniqueadvertisers.io/wp-content/uploads/2025/01/animation-6.mp4",
         type: "video/mp4",
       },
     ],

@@ -38,10 +38,12 @@ const WebRoutes = () => {
     THANK_YOU,
     SERVICE_ANIMATION,
     SERVICE_BRANDING,
-    SERVICE_DIGITAL,
+    SERVICE_SOCIAL,
     SERVICE_GRAPHICS,
     SERVICE_WEBSITE,
     SERVICE_STREAMERS,
+    SERVICE_APP,
+    SERVICE_SEO,
     POST_ADD,
     ADMIN,
     PROFILE,
@@ -71,9 +73,12 @@ const WebRoutes = () => {
       <Route path={SERVICE_WEBSITE} element={<SingleService />}></Route>
       <Route path={SERVICE_GRAPHICS} element={<SingleService />}></Route>
       <Route path={SERVICE_ANIMATION} element={<SingleService />}></Route>
-      <Route path={SERVICE_DIGITAL} element={<SingleService />}></Route>
+      <Route path={SERVICE_SOCIAL} element={<SingleService />}></Route>
       <Route path={SERVICE_BRANDING} element={<SingleService />}></Route>
       <Route path={SERVICE_STREAMERS} element={<SingleService />}></Route>
+      <Route path={SERVICE_APP} element={<SingleService />}></Route>
+      <Route path={SERVICE_SEO} element={<SingleService />}></Route>
+
       <Route path={BLOGS + "/:id"} element={<SinglePost />}></Route>
       <Route path="/tag/:id" element={<Archive />}></Route>
       <Route path="/category/:id" element={<Archive />}></Route>

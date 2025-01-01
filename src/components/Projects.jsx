@@ -275,7 +275,7 @@ const TabsData = ({ activeTab }) => {
       src: video.name,
       // poster: `/images/services/animation/anime-poster-${index + 1}.webp`,
       poster: `ANIM_POSTER_${index + 1}`,
-      projectTitle: `Vide Animation ${index + 1}`,
+      projectTitle: `Video Animation ${index + 1}`,
       projectDesc: `animation for your use Having a website with engaging and dynamic content increases user engagement. Our expertise lies in crafting animations that efficiently communicate your message, be it via interactive features, motion graphics, or explainer movies, guaranteeing a captivating and unforgettable user experience.
 `,
     }));

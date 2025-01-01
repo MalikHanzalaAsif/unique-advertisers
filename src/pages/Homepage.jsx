@@ -295,7 +295,7 @@ export const SolutionsTabs = () => {
 
   const solTab = [
     {
-      title: "Web & Mobile Development",
+      title: "Web Development",
       desc: "created aesthetically pleasing, user-friendly websites. websites that are search engine optimized and increase visitors.",
       link: "/services/website-development",
     },
@@ -305,9 +305,9 @@ export const SolutionsTabs = () => {
       link: "/services/graphic-design",
     },
     {
-      title: "Digital Marketing",
+      title: "Social Media Marketing",
       desc: "strategically implemented efforts to raise brand awareness. produced leads by using focused advertising.",
-      link: "/services/digital-marketing",
+      link: "/services/social-media-marketing",
     },
     {
       title: "Branding and Strategy",
@@ -321,6 +321,26 @@ export const SolutionsTabs = () => {
     },
     {
       title: "Streamers Templates",
+      desc: "Boost your online presence with our tailored digital marketing services, including email campaigns, social media, PPC, and SEO. We create strategies to reach your audience and achieve your business goals.",
+      link: "/services/streamers-templates",
+    },
+    {
+      title: "App Development",
+      desc: "Boost your online presence with our tailored digital marketing services, including email campaigns, social media, PPC, and SEO. We create strategies to reach your audience and achieve your business goals.",
+      link: "/services/app-development",
+    },
+    {
+      title: "Email Marketing",
+      desc: "Boost your online presence with our tailored digital marketing services, including email campaigns, social media, PPC, and SEO. We create strategies to reach your audience and achieve your business goals.",
+      link: "/services/streamers-templates",
+    },
+    {
+      title: "Search Engine Optimization",
+      desc: "Boost your online presence with our tailored digital marketing services, including email campaigns, social media, PPC, and SEO. We create strategies to reach your audience and achieve your business goals.",
+      link: "/services/seo",
+    },
+    {
+      title: "Google Ads",
       desc: "Boost your online presence with our tailored digital marketing services, including email campaigns, social media, PPC, and SEO. We create strategies to reach your audience and achieve your business goals.",
       link: "/services/streamers-templates",
     },
@@ -397,7 +417,7 @@ export const SolutionsTabs = () => {
                     onMouseEnter={() => setHoverIndex(ind)}
                     onMouseLeave={() => setHoverIndex(0)} // Reset to the first image or any desired default behavior
                   >
-                    <h4>{"0" + (ind + 1)}</h4>
+                    <h4>{(ind + 1)}</h4>
                     <h3 className="xl:w-[300px]">{items.title}</h3>
                     <p className="leading-8 lg:w-[350px] w-full">
                       {items.desc}

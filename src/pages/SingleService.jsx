@@ -7,6 +7,8 @@ import {
   marketingServiceData,
   StreamersServiceData,
   webServiceData,
+  AppServiceData,
+  seoServiceData,
 } from "@/api/services-api";
 import { useLocation } from "react-router-dom";
 import { PackageTabs } from "@/components/Packages";
@@ -23,8 +25,10 @@ export default function SingleService() {
   const webDevUri = "website-development";
   const animationUri = "animation";
   const brandingUri = "branding-and-strategy";
-  const marketingUri = "digital-marketing";
+  const marketingUri = "social-media-marketing";
   const streamersUri = "streamers-templates";
+  const appUri = "app-development";
+  const seoUri = "seo"
 
   let data;
 
@@ -40,6 +44,10 @@ export default function SingleService() {
     data = marketingServiceData;
   } else if (location === streamersUri) {
     data = StreamersServiceData;
+  } else if (location === appUri) {
+    data = AppServiceData;
+  } else if (location === seoUri) {
+    data = seoServiceData;
   }
 
   if (!data) {
@@ -81,9 +89,11 @@ export default function SingleService() {
           <CardBox infoBoxCard={cardContent} />
         </div>
       )}
-      <div className="container md:py-[80px] py-[40px] gallery_box">
-        <PortfolioTabs activeService={currentTab} />
-      </div>
+      {currentTab !== "appDev" && currentTab !== "emailMarketing" && currentTab !== "googleAds" && currentTab !== "seo" && (
+        <div className="container md:py-[80px] py-[40px] gallery_box">
+          <PortfolioTabs activeService={currentTab} />
+        </div>
+      )}
       <ServiceDetail
         title={serviceDetailsTitle}
         desc={serviceDetailsDesc}

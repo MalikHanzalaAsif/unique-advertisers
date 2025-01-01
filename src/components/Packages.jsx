@@ -1146,11 +1146,6 @@ let tabs = [
     description: <TabsData activeTab={"appDev"} />,
   },
   {
-    id: "smm",
-    label: "Social Media Marketing",
-    description: <TabsData activeTab={"smm"} />,
-  },
-  {
     id: "emailMarketing",
     label: "Email Marketing",
     description: <TabsData activeTab={"emailMarketing"} />,

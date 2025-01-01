@@ -8,12 +8,12 @@ export const Images = {
   revBanner3: "/images/services/ReviewShots3.jpg",
   revBanner4: "/images/services/ReviewShots4.jpg",
 
-  ANIM_POSTER_1: "/images/services/animation/anime-poster-1.webp",
-  ANIM_POSTER_2: "/images/services/animation/anime-poster-2.webp",
-  ANIM_POSTER_3: "/images/services/animation/anime-poster-3.webp",
-  ANIM_POSTER_4: "/images/services/animation/anime-poster-4.webp",
-  ANIM_POSTER_5: "/images/services/animation/anime-poster-5.webp",
-  ANIM_POSTER_6: "/images/services/animation/anime-poster-6.webp",
+  ANIM_POSTER_1: "/images/services/animation/anime-poster-1.png",
+  ANIM_POSTER_2: "/images/services/animation/anime-poster-2.jpg",
+  ANIM_POSTER_3: "/images/services/animation/anime-poster-3.png",
+  ANIM_POSTER_4: "/images/services/animation/anime-poster-4.png",
+  ANIM_POSTER_5: "/images/services/animation/anime-poster-5.png",
+  ANIM_POSTER_6: "/images/services/animation/anime-poster-6.png",
 
   // Portfolio Section Images
 
@@ -124,9 +124,13 @@ export const Images = {
 
   STREAMER_COVER: "/images/services/streamers-bg.png",
   GRAPHICS_COVER: "/images/services/graphics-bg.jpg",
+
+  // SEO IMAGES
+  seoShot2: "/images/services/seo-2.jpg",
 };
 
 export const Videos = {
   VideoShot: "/images/services/anime-1.mp4",
   VideoShot2: "/images/services/streamer-video-1.mp4",
+  seoShot1: "/images/services/seo-1.mp4"
 };
