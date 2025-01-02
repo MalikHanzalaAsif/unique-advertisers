@@ -26,6 +26,20 @@ export const ScrollToTop = () => {
 
 export const App = () => {
   const [isLoading, setIsLoading] = useState(true);
+  // const handleLoad = () => {
+  //   setIsLoading(false);
+  // };
+
+
+  // if (document.readyState === "complete") {
+  //   handleLoad();
+  // } else {
+  //   window.addEventListener("load", handleLoad);
+  // }
+
+  // return () => {
+  //   window.removeEventListener("load", handleLoad);
+  // };
 
   useEffect(() => {
     const timeout = setTimeout(() => {
