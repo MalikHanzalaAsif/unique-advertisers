@@ -9,6 +9,8 @@ import {
   webServiceData,
   AppServiceData,
   seoServiceData,
+  emailServiceData,
+  googleServiceData
 } from "@/api/services-api";
 import { useLocation } from "react-router-dom";
 import { PackageTabs } from "@/components/Packages";
@@ -29,6 +31,8 @@ export default function SingleService() {
   const streamersUri = "streamers-templates";
   const appUri = "app-development";
   const seoUri = "seo"
+  const emailUri = "email-marketing"
+  const googleUri = "google-ads"
 
   let data;
 
@@ -48,7 +52,11 @@ export default function SingleService() {
     data = AppServiceData;
   } else if (location === seoUri) {
     data = seoServiceData;
-  }
+  } else if (location === emailUri) { 
+    data = emailServiceData;
+  } else if (location === googleUri) { 
+    data = googleServiceData;
+   }
 
   if (!data) {
     return <div>NO DATA FOUND!</div>;

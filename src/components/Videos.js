@@ -71,7 +71,7 @@ const videos = [
     type: "video",
     width: 1280,
     height: 720,
-    name: "AnimationVedioFive",
+    name: "AnimationVedioSix",
     poster: Images.StreamersVedioOne,
     sources: [
       {

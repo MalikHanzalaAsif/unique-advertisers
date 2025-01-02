@@ -44,6 +44,8 @@ const WebRoutes = () => {
     SERVICE_STREAMERS,
     SERVICE_APP,
     SERVICE_SEO,
+    SERVICE_EMAIL,
+    SERVICE_GOOGLE,
     POST_ADD,
     ADMIN,
     PROFILE,
@@ -78,6 +80,8 @@ const WebRoutes = () => {
       <Route path={SERVICE_STREAMERS} element={<SingleService />}></Route>
       <Route path={SERVICE_APP} element={<SingleService />}></Route>
       <Route path={SERVICE_SEO} element={<SingleService />}></Route>
+      <Route path={SERVICE_EMAIL} element={<SingleService />}></Route>
+      <Route path={SERVICE_GOOGLE} element={<SingleService />}></Route>
 
       <Route path={BLOGS + "/:id"} element={<SinglePost />}></Route>
       <Route path="/tag/:id" element={<Archive />}></Route>

@@ -559,8 +559,8 @@ export const AppServiceData = {
   serviceSubheading: "",
   infoServiceTitle: "App Development",
   infoServiceDesc:
-    "At Unique Advertisers, we specialise in creating visually appealing, dynamic websites that are simple to use and retain. Our talented development team uses the most recent technology to craft unique websites that are tailored to your unique requirements, ensuring perfect operation and an exceptional user experience.",
-  infoServiceImage: "WebsiteShotOne",
+    " At Unique Advertisers, we offer expert app development services tailored to your business. Our team creates innovative, user-friendly mobile and web applications, ensuring seamless performance and scalability. From UI/UX design to development, testing, and maintenance, we provide comprehensive solutions to bring your digital ideas to life and drive business growth. ",
+  infoServiceImage: "appShot1",
   cardContent: [
     {
       boxLogo: "",
@@ -570,19 +570,15 @@ export const AppServiceData = {
   ],
   serviceDetailsTitle: "App Development",
   serviceDetailsDesc:
-    "Our specialty at Unique Advertisers is building captivating, dynamic websites that are easy to navigate and remember. Using the newest technology, our skilled development team creates custom websites that are suited to your specific needs, guaranteeing flawless operation and an outstanding user experience.",
-  serviceDetailsImage: "WebsiteShotSeven",
+    " At Unique Advertisers, app development is the key to transforming your business ideas into reality. We specialize in creating user-friendly, scalable mobile and web applications that deliver seamless performance. Our approach ensures your app meets your business goals, driving engagement, growth, and success across all platforms. ",
+  serviceDetailsImage: "appShot2",
   serviceIconList: [
     {
-      title: "Share your vision",
-      icon: <FaArrowsToEye />,
-    },
-    {
-      title: "Weave the Magic",
+      title: "Turn Ideas into Apps",
       icon: <FaMagic />,
     },
     {
-      title: "Your Input Matters",
+      title: " Shape Your Success",
       icon: <MdInput />,
     },
   ],
@@ -613,6 +609,66 @@ export const seoServiceData = {
     },
     {
       title: "Bring Your Ideas to Life",
+      icon: <FaMagic />,
+    },
+  ],
+}
+export const emailServiceData = {
+  currentTab: "emailMarketing",
+  serivceBannerHeading: "Email Marketing",
+  serviceSubheading: "",
+  infoServiceTitle: "Email Marketing",
+  infoServiceDesc:
+    " With our expert email marketing services, you can directly connect with your audience and drive results. We craft personalized, targeted email campaigns designed to engage customers, promote your products, and build lasting relationships. From increasing brand awareness to boosting conversions, our email strategies are tailored to meet your business goals. ",
+  infoServiceImage: "emailShot1",
+  cardContent: [
+    {
+      boxLogo: "",
+      boxTitle: "",
+      boxContent: "",
+    },
+  ],
+  serviceDetailsTitle: "Search Engine Optimization",
+  serviceDetailsDesc:
+    " At Unique Advertisers, email marketing is a powerful tool to engage your audience and drive results. We design targeted, personalized campaigns that reach the right people with the right message, promoting your brand and building lasting relationships. Our approach ensures higher engagement, conversions, and business growth. ",
+  serviceDetailsImage: "emailShot2",
+  serviceIconList: [
+    {
+      title: "Create the Impact",
+      icon: <FaArrowsToEye />,
+    },
+    {
+      title: "Build Strong Connections",
+      icon: <FaMagic />,
+    },
+  ],
+};
+export const googleServiceData = {
+  currentTab: "googleAds",
+  serivceBannerHeading: "Google Ads",
+  serviceSubheading: "",
+  infoServiceTitle: "Google Ads",
+  infoServiceDesc:
+    " With our Google Ads services, you can drive targeted traffic and achieve measurable results. We create tailored PPC campaigns that help your business appear on Google search results, display ads, and more. By optimizing your budget and targeting the right keywords, we ensure maximum visibility and increased conversions. ",
+  infoServiceImage: "googleShot1",
+  cardContent: [
+    {
+      boxLogo: "",
+      boxTitle: "",
+      boxContent: "",
+    },
+  ],
+  serviceDetailsTitle: "PPC",
+  serviceDetailsDesc:
+    " At Unique Advertisers, Google Ads is the key to driving immediate results for your business. We craft targeted PPC campaigns that ensure your brand appears in front of the right audience on Google. Our approach maximizes your ad spend, boosts visibility, and drives high-quality conversions. ",
+  serviceDetailsImage: "googleShot2",
+  serviceIconList: [
+    {
+      title: "Create the Impact",
+      icon: <FaArrowsToEye />,
+    },
+    {
+      title: "Drive Targeted Growth",
       icon: <FaMagic />,
     },
   ],

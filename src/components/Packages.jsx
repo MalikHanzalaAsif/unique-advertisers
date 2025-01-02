@@ -216,6 +216,7 @@ function PackageModal({ modalPackageDetails }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
+        {}
         <Button variant="outline" className="text-black w-full">
           Order Now
         </Button>
@@ -858,6 +859,17 @@ const TabsData = ({ activeTab }) => {
         ],
         price: "Starting from $4999",
         addon: ["Best Value for Money Guaranteed!"],
+      },
+    ];
+  } else if (activeTab === "appDev") {
+    packageData = [
+      {
+        title: "App Development",
+        list: [
+          "Transform your app idea into reality with our tailored app development solutions. Whether you’re starting from scratch or upgrading an existing app, we work closely with you to create innovative, user-friendly applications that meet your unique business needs. Schedule a meeting with us to discuss your project, and we’ll provide a personalized quote designed specifically for your vision"
+        ],
+        price: "CTA",
+        addon: ["📱 Let’s turn your app idea into success! Schedule a call now to discuss your project and get a custom quote."],
       },
     ];
   } else {

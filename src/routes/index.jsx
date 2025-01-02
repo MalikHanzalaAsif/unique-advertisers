@@ -19,6 +19,8 @@ export const ROUTES = {
   SERVICE_STREAMERS: "/services/streamers-templates",
   SERVICE_APP: "/services/app-development",
   SERVICE_SEO: "/services/seo",
+  SERVICE_EMAIL: "/services/email-marketing",
+  SERVICE_GOOGLE: "/services/google-ads",
   POST_ADD: "/add-post",
   ADMIN: "/admin",
   PROFILE: "/profile",

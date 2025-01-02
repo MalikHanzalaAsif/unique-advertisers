@@ -125,6 +125,18 @@ export const Images = {
   STREAMER_COVER: "/images/services/streamers-bg.png",
   GRAPHICS_COVER: "/images/services/graphics-bg.jpg",
 
+  // EMAIL MARKETING IMAGES
+  emailShot1: "/images/services/email-1.jpg",
+  emailShot2: "/images/services/email-2.jpg",
+
+  // GOOGLE ADS IMAGES
+  googleShot1: "/images/services/google-1.jpg",
+  googleShot2: "/images/services/google-2.jpg",
+
+  // APP DEV IMAGES
+  appShot1: "/images/services/app-1.jpg",
+  appShot2: "/images/services/app-2.jpg",
+
   // SEO IMAGES
   seoShot2: "/images/services/seo-2.jpg",
 };

@@ -306,7 +306,7 @@ export const SolutionsTabs = () => {
     },
     {
       title: "Social Media Marketing",
-      desc: "strategically implemented efforts to raise brand awareness. produced leads by using focused advertising.",
+      desc: "Build brand awareness, engage audiences, drive traffic, and increase conversions through customized campaigns on various social platforms.",
       link: "/services/social-media-marketing",
     },
     {
@@ -321,28 +321,28 @@ export const SolutionsTabs = () => {
     },
     {
       title: "Streamers Templates",
-      desc: "Boost your online presence with our tailored digital marketing services, including email campaigns, social media, PPC, and SEO. We create strategies to reach your audience and achieve your business goals.",
+      desc: "Boost your online presence with our digital marketing services: email, social media, PPC, and SEO to reach your audience and achieve your goals.",
       link: "/services/streamers-templates",
     },
     {
       title: "App Development",
-      desc: "Boost your online presence with our tailored digital marketing services, including email campaigns, social media, PPC, and SEO. We create strategies to reach your audience and achieve your business goals.",
+      desc: "Create innovative, user-friendly mobile and web apps with seamless performance and tailored solutions.",
       link: "/services/app-development",
     },
     {
       title: "Email Marketing",
-      desc: "Boost your online presence with our tailored digital marketing services, including email campaigns, social media, PPC, and SEO. We create strategies to reach your audience and achieve your business goals.",
-      link: "/services/streamers-templates",
+      desc: "Engage audiences and drive conversions through personalized, targeted campaigns that build lasting relationships.",
+      link: "/services/email-marketing",
     },
     {
       title: "Search Engine Optimization",
-      desc: "Boost your online presence with our tailored digital marketing services, including email campaigns, social media, PPC, and SEO. We create strategies to reach your audience and achieve your business goals.",
+      desc: "Improve website visibility, optimize content, boost rankings, and drive organic traffic for long-term growth.",
       link: "/services/seo",
     },
     {
       title: "Google Ads",
-      desc: "Boost your online presence with our tailored digital marketing services, including email campaigns, social media, PPC, and SEO. We create strategies to reach your audience and achieve your business goals.",
-      link: "/services/streamers-templates",
+      desc: "Create targeted campaigns to drive traffic, optimize ad spend, and boost conversions for measurable growth.",
+      link: "/services/google-ads",
     },
   ];
 
@@ -366,6 +366,22 @@ export const SolutionsTabs = () => {
     {
       type: "image",
       src: VideoAnimationService,
+    },
+    {
+      type: "image",
+      src: StreamersService,
+    },
+    {
+      type: "image",
+      src: StreamersService,
+    },
+    {
+      type: "image",
+      src: StreamersService,
+    },
+    {
+      type: "image",
+      src: StreamersService,
     },
     {
       type: "image",
