@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "@/assets/component-styles/home.css";
 import { NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -32,21 +32,27 @@ import StreamersService from "/images/services/streamers-service.png";
 import YourStyleShot from "/images/services/find-your-style-component.webp";
 import Wrapper from "@/components/Wrapper";
 
+
 const Homepage = () => {
+
   // const auth = JSON.parse(localStorage.getItem("user"));
   // const auth = useSelector((state) => state.auth.user);
   return (
     <>
-      <Hero />
-      <PartnerLogoSlider />
-      <About />
-      <SolutionsComp />
-      <SolutionsTabs />
-      <Projects />
-      <Testimonials />
-      <ContactBar />
-      <Packages />
-      <Faq />
+
+        <>
+          <Hero />
+          <PartnerLogoSlider />
+          <About />
+          <SolutionsComp />
+          <SolutionsTabs />
+          <Projects />
+          <Testimonials />
+          <ContactBar />
+          <Packages />
+          <Faq />
+        </>
+
     </>
   );
 };
@@ -54,6 +60,7 @@ const Homepage = () => {
 export default Homepage;
 
 const Hero = () => {
+
   return (
     <main className="hero relative mx-auto">
       <Wrapper>
@@ -85,7 +92,7 @@ const Hero = () => {
                 & Creative Agency
               </h1>
               <p className="py-8 leading-8">
-              Unique Advertisers: Amazing you with all of your digital requirements indulging Twitch Designs, SEO’s, UI/UX Design, Website Development and Social Media Marketing. Feel free to sweep through and get all your requirements done under one roof.
+                Unique Advertisers: Amazing you with all of your digital requirements indulging Twitch Designs, SEO’s, UI/UX Design, Website Development and Social Media Marketing. Feel free to sweep through and get all your requirements done under one roof.
               </p>
               <div>
                 <NavLink className="cta glow" to="/contact">
@@ -152,7 +159,7 @@ const About = () => {
                 </span>
               </h2>
               <p className="py-8 leading-8">
-              Be our partner in digital creations here at Unique Advertisers, Where with your imagination and our execution, we can create the perfect fallout.
+                Be our partner in digital creations here at Unique Advertisers, Where with your imagination and our execution, we can create the perfect fallout.
               </p>
               <div className="icon_list pb-8">
                 <ul className="grid sm:grid-cols-2">

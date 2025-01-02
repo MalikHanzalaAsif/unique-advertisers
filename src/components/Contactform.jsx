@@ -55,7 +55,7 @@ const Contactform = ({ title, price }) => {
       }
 
       if (res.status >= 200 && res.status <= 300) {
-        return navigate(ROUTES.THANK_YOU); // CHNAGED THIS TO REDIRECT TO THANK YOU PAGE CORRECTLY
+        return navigate(ROUTES.THANK_YOU); // CHANGED THIS TO REDIRECT TO THANK YOU PAGE CORRECTLY
       }
     },
   });
