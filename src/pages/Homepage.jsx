@@ -24,11 +24,11 @@ import ContactBar from "@/components/ContactBar";
 import Packages from "@/components/Packages";
 import Faq from "@/components/Faq";
 import DeigitalMarketingService from "/images/services/digital-marketing.jpg";
-import GraphicService from "/images/services/graphic-design.jpg";
-import WebDevService from "/images/services/Web-dev.jpg";
+import GraphicService from "/images/services/graphic-designing.jpg";
+import WebDevService from "/images/services/website-dev.jpg";
 import BrandingService from "/images/services/branding-service.jpg";
 import VideoAnimationService from "/images/services/animation/people-office.webp";
-import StreamersService from "/images/services/streamers-service.png";
+import StreamersService from "/images/services/streamer-template.jpg";
 import YourStyleShot from "/images/services/find-your-style-component.webp";
 import Wrapper from "@/components/Wrapper";
 
