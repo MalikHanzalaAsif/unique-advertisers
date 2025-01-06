@@ -23,13 +23,17 @@ import Testimonials from "@/components/Testimonials";
 import ContactBar from "@/components/ContactBar";
 import Packages from "@/components/Packages";
 import Faq from "@/components/Faq";
-import DeigitalMarketingService from "/images/services/digital-marketing.jpg";
+import DeigitalMarketingService from "/images/services/social-media-marketing.jpg";
 import GraphicService from "/images/services/graphic-designing.jpg";
 import WebDevService from "/images/services/website-dev.jpg";
-import BrandingService from "/images/services/branding-service.jpg";
-import VideoAnimationService from "/images/services/animation/people-office.webp";
+import BrandingService from "/images/services/branding-&-strategy.jpg";
+import VideoAnimationService from "/images/services/video-animation.jpg";
 import StreamersService from "/images/services/streamer-template.jpg";
 import YourStyleShot from "/images/services/find-your-style-component.webp";
+import AppDevService from "/images/services/app-dev.jpg";
+import EmailMarketingService from "/images/services/email-marketing.jpg";
+import SeoService from "/images/services/s-e-o.jpg";
+import GoogleAdsService from "/images/services/google-ads.jpg";
 import Wrapper from "@/components/Wrapper";
 
 
@@ -380,19 +384,19 @@ export const SolutionsTabs = () => {
     },
     {
       type: "image",
-      src: StreamersService,
+      src: AppDevService,
     },
     {
       type: "image",
-      src: StreamersService,
+      src: EmailMarketingService,
     },
     {
       type: "image",
-      src: StreamersService,
+      src: SeoService,
     },
     {
       type: "image",
-      src: StreamersService,
+      src: GoogleAdsService,
     },
     // Add other images here
   ];
