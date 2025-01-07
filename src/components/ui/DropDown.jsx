@@ -1,0 +1,47 @@
+import React from "react";
+
+const DropDown = ({
+  id,
+  placeholder,
+  options,
+  value,
+  onChange,
+  onBlur,
+  title,
+  isBgTransparent,
+}) => {
+  return (
+    <div className="flex flex-col hover:border-amber-600 focus-within:border-primary p-2 rounded max-w-[100%]">
+      <label
+        htmlFor={id}
+        className="text-sm mb-2 text-gray-500"
+      >
+        {title}
+      </label>
+      <select
+        name={id}
+        id={id}
+        onChange={onChange}
+        onBlur={onBlur}
+        value={value}
+        className={
+          "bg-transparent border border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:border-primary rounded-md p-2 text-sm w-full h-11"}
+      >
+        <option value="" disabled hidden>
+          {placeholder}
+        </option>
+        {options.map((option, index) => (
+          <option
+            key={index}
+            value={option}
+            className="text-black text-sm"
+          >
+            {option}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+};
+
+export default DropDown;

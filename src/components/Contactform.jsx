@@ -10,6 +10,8 @@ import { useState } from "react";
 import { redirect, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { ROUTES } from "@/routes";
+import { business, revenue } from "@/utils/options";
+import DropDown from "./ui/DropDown";
 
 const Contactform = ({ title, price }) => {
   const navigate = useNavigate();
@@ -32,11 +34,15 @@ const Contactform = ({ title, price }) => {
       email: "",
       phone: "",
       msg: "",
+      companyName: "",
+      companyWebsite: "",
+      businessType: "",
+      annualRevenue: "",
     },
     validationSchema: packageValidations,
     onSubmit: async (data) => {
       setLoading(true);
-      const { name, email, phone, msg } = data;
+      const { name, email, phone, msg, companyName, companyWebsite, businessType, annualRevenue } = data;
 
       const formData = new FormData();
       formData.append(VARIABLES.CF7_UNIT_TAG, formId);
@@ -44,6 +50,10 @@ const Contactform = ({ title, price }) => {
       formData.append(VARIABLES.EMAIL, email);
       formData.append(VARIABLES.PHONE_NAME, phone); // CHANGED THIS TO SEND PHONE NUMBER CORRECTLY
       formData.append(VARIABLES.MESSAGE, msg);
+      formData.append(VARIABLES.COMPANY_NAME, companyName);
+      formData.append(VARIABLES.COMPANY_WEBSITE, companyWebsite);
+      formData.append(VARIABLES.BUSINESS_TYPE, businessType);
+      formData.append(VARIABLES.ANNUAL_REVENUE, annualRevenue);
       if (title) {
         formData.append(VARIABLES.PACKAGE_TITLE, title);
         formData.append(VARIABLES.PACKAGE_PRICE, price);
@@ -88,6 +98,31 @@ const Contactform = ({ title, price }) => {
       />
     );
   };
+  const renderDropDown = (id, placeholder, title, options) => {
+    return (
+      <>
+        <DropDown
+          key={id}
+          id={id}
+          placeholder={placeholder}
+          options={options}
+          value={values[id]}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          errors={touched[id] && errors[id]}
+          title={title}
+          className={
+            "bg-transparent " + (isBgTransparent ? "text-white" : "text-black")
+          }
+        />
+        {touched[VARIABLES[id]] && errors[VARIABLES[id]] && (
+          <span className="!text-red-600 text-sm absolute bottom-[-30px] left-0">
+            {errors[VARIABLES[id]]}
+          </span>
+        )}
+      </>
+    );
+  }
 
   const handlePhoneValue = (phoneValue) => {
     setFieldValue(VARIABLES.PHONE_NAME, phoneValue); // CHANGED THIS TO SET PHONE NUMBER CORRECTLY
@@ -107,6 +142,28 @@ const Contactform = ({ title, price }) => {
             VARIABLES.INPUT_TYPE_EMAIL,
             VARIABLES.EMAIL_PLACEHOLDER
           ),
+          renderValues(
+            VARIABLES.COMPANY_NAME,
+            VARIABLES.INPUT_TYPE_TEXT,
+            VARIABLES.COMPANY_NAME_PLACEHOLDER
+          ),
+          renderValues(
+            VARIABLES.COMPANY_WEBSITE,
+            VARIABLES.INPUT_TYPE_TEXT,
+            VARIABLES.COMPANY_WEBSITE_PLACEHOLDER
+          ),
+          renderDropDown(
+            VARIABLES.BUSINESS_TYPE,
+            VARIABLES.BUSINESS_TYPE_PLACEHOLDER,
+            VARIABLES.BUSINESS_TYPE_TITLE,
+            business
+          ),
+          renderDropDown(
+            VARIABLES.ANNUAL_REVENUE,
+            VARIABLES.ANNUAL_REVENUE_PLACEHOLDER,
+            VARIABLES.ANNUAL_REVENUE_TITLE,
+            revenue
+          )
         ]}
         <PhoneInput
           handlePhoneValue={handlePhoneValue}

@@ -218,7 +218,7 @@ function PackageModal({ modalPackageDetails }) {
       <DialogTrigger asChild>
         {}
         <Button variant="outline" className="text-black w-full">
-          Order Now
+           Schedule a Call
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px]">
@@ -868,7 +868,7 @@ const TabsData = ({ activeTab }) => {
         list: [
           "Transform your app idea into reality with our tailored app development solutions. Whether you’re starting from scratch or upgrading an existing app, we work closely with you to create innovative, user-friendly applications that meet your unique business needs. Schedule a meeting with us to discuss your project, and we’ll provide a personalized quote designed specifically for your vision"
         ],
-        price: "CTA",
+        price: "",
         addon: ["📱 Let’s turn your app idea into success! Schedule a call now to discuss your project and get a custom quote."],
       },
     ];
@@ -1138,9 +1138,9 @@ let tabs = [
   },
 
   {
-    id: "social",
+    id: "smm",
     label: "Social Media",
-    description: <TabsData activeTab={"social"} />,
+    description: <TabsData activeTab={"smm"} />,
   },
   {
     id: "anim",
