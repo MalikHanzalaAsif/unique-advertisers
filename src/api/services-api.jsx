@@ -116,7 +116,7 @@ export const graphicServiceData = {
   infoServiceTitle: "Graphic Design",
   infoServiceDesc:
     "Make a lasting impression on the competitors with our captivating graphic designs. Whether you need an eye-catching logo, branding materials, or stunning images for your website or marketing campaigns, our talented designers will creatively and accurately bring your vision to life.",
-  infoServiceImage: "LogoShotThree",
+  infoServiceImage: "graphicShot1",
   cardContent: [
     {
       boxLogo: "",
@@ -363,7 +363,7 @@ export const marketingServiceData = {
   infoServiceTitle: "Social Media Marketing",
   infoServiceDesc:
     " With Unique Advertisers' strategic social media marketing services, you can elevate your online presence and achieve impactful results. We create customized strategies to engage your target audience and help you meet your business objectives, including content creation, social media campaigns, paid ads, and detailed performance analysis. ",
-  infoServiceImage: "MarketingShotTwo",
+  infoServiceImage: "MarketingShotSixteen",
   cardContent: [
     {
       boxLogo: "",

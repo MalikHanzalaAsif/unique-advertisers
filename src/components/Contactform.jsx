@@ -6,14 +6,19 @@ import InputComponent from "./common/input";
 import { CONTACT_FORM_ID, PACKAGE_FORM_ID, VARIABLES } from "@/utils/variables";
 import PhoneInput from "./common/input-phone";
 import { formApi } from "@/api/api";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { redirect, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { ROUTES } from "@/routes";
 import { business, revenue } from "@/utils/options";
 import DropDown from "./ui/DropDown";
+import Checkbox from '@mui/joy/Checkbox';
 
 const Contactform = ({ title, price }) => {
+  const [isChecked, setIsChecked] = useState(false);
+  const handleCheckBoxChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
   const navigate = useNavigate();
   let formId;
   let isBgTransparent = false;
@@ -80,8 +85,8 @@ const Contactform = ({ title, price }) => {
     setFieldValue,
   } = formik;
 
-
-  const renderValues = (id, type, placeholder) => {
+  console.log(values)
+  const renderValues = (id, type, placeholder, required) => {
     return (
       <InputComponent
         key={id}
@@ -95,6 +100,7 @@ const Contactform = ({ title, price }) => {
         className={
           "bg-transparent " + (isBgTransparent ? "text-white" : "text-black")
         }
+        required={required}
       />
     );
   };
@@ -115,7 +121,7 @@ const Contactform = ({ title, price }) => {
             "bg-transparent " + (isBgTransparent ? "text-white" : "text-black")
           }
         />
-        {touched[VARIABLES[id]] && errors[VARIABLES[id]] && (
+        {errors[VARIABLES[id]] && (
           <span className="!text-red-600 text-sm absolute bottom-[-30px] left-0">
             {errors[VARIABLES[id]]}
           </span>
@@ -135,35 +141,15 @@ const Contactform = ({ title, price }) => {
           renderValues(
             VARIABLES.NAME,
             VARIABLES.INPUT_TYPE_TEXT,
-            VARIABLES.NAME_PLACEHOLDER
+            VARIABLES.NAME_PLACEHOLDER,
+            true
           ),
           renderValues(
             VARIABLES.EMAIL,
             VARIABLES.INPUT_TYPE_EMAIL,
-            VARIABLES.EMAIL_PLACEHOLDER
+            VARIABLES.EMAIL_PLACEHOLDER,
+            true
           ),
-          renderValues(
-            VARIABLES.COMPANY_NAME,
-            VARIABLES.INPUT_TYPE_TEXT,
-            VARIABLES.COMPANY_NAME_PLACEHOLDER
-          ),
-          renderValues(
-            VARIABLES.COMPANY_WEBSITE,
-            VARIABLES.INPUT_TYPE_TEXT,
-            VARIABLES.COMPANY_WEBSITE_PLACEHOLDER
-          ),
-          renderDropDown(
-            VARIABLES.BUSINESS_TYPE,
-            VARIABLES.BUSINESS_TYPE_PLACEHOLDER,
-            VARIABLES.BUSINESS_TYPE_TITLE,
-            business
-          ),
-          renderDropDown(
-            VARIABLES.ANNUAL_REVENUE,
-            VARIABLES.ANNUAL_REVENUE_PLACEHOLDER,
-            VARIABLES.ANNUAL_REVENUE_TITLE,
-            revenue
-          )
         ]}
         <PhoneInput
           handlePhoneValue={handlePhoneValue}
@@ -172,7 +158,7 @@ const Contactform = ({ title, price }) => {
           id={VARIABLES.PHONE_NAME} // CHANGED THIS TO SEND PHONE NUMBER CORRECTLY
           onChange={handleChange}
         />
-        <div className="relative">
+        <div className="relative mb-6">
           <Textarea
             placeholder={VARIABLES.MESSAGE_PLACEHOLDER}
             id={VARIABLES.MESSAGE}
@@ -187,11 +173,48 @@ const Contactform = ({ title, price }) => {
             style={!isBgTransparent ? { color: "#000" } : {}}
           />
           {touched[VARIABLES.MESSAGE] && errors[VARIABLES.MESSAGE] && (
-            <span className="!text-red-600 text-sm absolute bottom-[-30px] left-0">
+            <span className="!text-red-600 text-sm absolute bottom-[-20px] left-0">
               {errors[VARIABLES.MESSAGE]}
             </span>
           )}
         </div>
+        {[
+          renderValues(
+            VARIABLES.COMPANY_NAME,
+            VARIABLES.INPUT_TYPE_TEXT,
+            VARIABLES.COMPANY_NAME_PLACEHOLDER,
+            true
+          ),
+          renderValues(
+            VARIABLES.COMPANY_WEBSITE,
+            VARIABLES.INPUT_TYPE_TEXT,
+            VARIABLES.COMPANY_WEBSITE_PLACEHOLDER,
+            false
+          ),
+          renderDropDown(
+            VARIABLES.BUSINESS_TYPE,
+            VARIABLES.BUSINESS_TYPE_PLACEHOLDER,
+            VARIABLES.BUSINESS_TYPE_TITLE,
+            business
+          ),
+          renderDropDown(
+            VARIABLES.ANNUAL_REVENUE,
+            VARIABLES.ANNUAL_REVENUE_PLACEHOLDER,
+            VARIABLES.ANNUAL_REVENUE_TITLE,
+            revenue
+          )
+        ]}
+      </div>
+      <div>
+        <Checkbox
+          color="warning"
+          label="I agree to terms & conditions provided by the company. By providing my phone number, I agree to receive text messages from the business."
+          variant="outlined"
+          style={{color: "gray", fontSize: "0.8rem", padding: "1rem"}}
+          required={true}
+          onChange={handleCheckBoxChange}
+          value={isChecked}
+        />
       </div>
       <Button
         type="submit"

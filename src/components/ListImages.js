@@ -121,6 +121,7 @@ export const Images = {
   MarketingShotThirteen: "/images/services/Marketing-13.png",
   MarketingShotFouteen: "/images/services/Marketing-14.png",
   MarketingShotFifteen: "/images/services/Marketing-15.png",
+  MarketingShotSixteen: "/images/services/Marketing-16.jpg",
 
   STREAMER_COVER: "/images/services/streamers-bg.png",
   GRAPHICS_COVER: "/images/services/graphics-bg.jpg",
@@ -136,6 +137,9 @@ export const Images = {
   // APP DEV IMAGES
   appShot1: "/images/services/app-1.jpg",
   appShot2: "/images/services/app-2.jpg",
+
+  // GRAPHIC DESIGN
+  graphicShot1: "/images/services/graphic-shot-1.jpg",
 
   // SEO IMAGES
   seoShot2: "/images/services/seo-2.jpg",

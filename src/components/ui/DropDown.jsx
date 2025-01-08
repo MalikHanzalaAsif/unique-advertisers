@@ -8,13 +8,12 @@ const DropDown = ({
   onChange,
   onBlur,
   title,
-  isBgTransparent,
 }) => {
   return (
-    <div className="flex flex-col hover:border-amber-600 focus-within:border-primary p-2 rounded max-w-[100%]">
+    <div className="hover:border-amber-600 focus-within:border-primary p-2 max-w-[100%]">
       <label
         htmlFor={id}
-        className="text-sm mb-2 text-gray-500"
+        className="text-sm text-gray-500"
       >
         {title}
       </label>
@@ -24,8 +23,11 @@ const DropDown = ({
         onChange={onChange}
         onBlur={onBlur}
         value={value}
-        className={
-          "bg-transparent border border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:border-primary rounded-md p-2 text-sm w-full h-11"}
+        className={`border border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:border-primary rounded-md p-2 text-sm w-full h-11 ${value === ""
+            ? "bg-transparent"
+            : "bg-white text-gray-900"
+          }`}
+        required={true}
       >
         <option value="" disabled hidden>
           {placeholder}
