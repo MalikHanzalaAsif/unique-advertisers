@@ -104,7 +104,7 @@ const Contactform = ({ title, price }) => {
       />
     );
   };
-  const renderDropDown = (id, placeholder, title, options) => {
+  const renderDropDown = (id, placeholder, title, options, required) => {
     return (
       <>
         <DropDown
@@ -120,6 +120,7 @@ const Contactform = ({ title, price }) => {
           className={
             "bg-transparent " + (isBgTransparent ? "text-white" : "text-black")
           }
+          required={required}
         />
         {errors[VARIABLES[id]] && (
           <span className="!text-red-600 text-sm absolute bottom-[-30px] left-0">
@@ -195,13 +196,15 @@ const Contactform = ({ title, price }) => {
             VARIABLES.BUSINESS_TYPE,
             VARIABLES.BUSINESS_TYPE_PLACEHOLDER,
             VARIABLES.BUSINESS_TYPE_TITLE,
-            business
+            business,
+            true
           ),
           renderDropDown(
             VARIABLES.ANNUAL_REVENUE,
             VARIABLES.ANNUAL_REVENUE_PLACEHOLDER,
             VARIABLES.ANNUAL_REVENUE_TITLE,
-            revenue
+            revenue,
+            false
           )
         ]}
       </div>

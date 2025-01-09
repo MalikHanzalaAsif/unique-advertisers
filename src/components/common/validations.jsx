@@ -19,7 +19,7 @@ export const packageValidations = Yup.object().shape({
     .max(50, "Company name cannot be more than 50 characters long"),
   companyWebsite: Yup.string(),
   businessType: Yup.string().required("Please select one"),
-  annualRevenue: Yup.string().required("Please select one"),
+  annualRevenue: Yup.string(),
   phone: Yup.string().required("Phone number is required"),
   msg: Yup.string()
     .min(50, "Message must be at least 50 characters long")

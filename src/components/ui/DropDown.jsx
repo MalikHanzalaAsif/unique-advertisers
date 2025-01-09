@@ -27,7 +27,6 @@ const DropDown = ({
             ? "bg-transparent"
             : "bg-white text-gray-900"
           }`}
-        required={true}
       >
         <option value="" disabled hidden>
           {placeholder}
