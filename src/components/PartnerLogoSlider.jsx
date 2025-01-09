@@ -7,7 +7,7 @@ import Logo2 from "/images/services/partner-logos-2.png";
 import Logo3 from "/images/services/partner-logos-3.png";
 import Logo4 from "/images/services/partner-logos-4.png";
 import Logo5 from "/images/services/partner-logos-5.png";
-import Logo6 from "/images/services/partner-logos-5.png";
+import Logo6 from "/images/services/partner-logos-6.png";
 
 const PartnerLogoSlider = () => {
   return (

@@ -223,7 +223,7 @@ const Contactform = ({ title, price }) => {
             ? "bg-black text-white"
             : "hover:bg-secondary hover:text-white"
           }`}
-        disabled={isLoading}
+        disabled={isLoading || !isChecked}
       >
         {isLoading ? "Submitting... " : "Submit"}
       </Button>

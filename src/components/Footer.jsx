@@ -184,4 +184,20 @@ const servLinks = [
     title: VARIABLES.SERVICES.STREAMERS,
     link: ROUTES.STREAMERS,
   },
+  {
+    title: "App Development",
+    link: "services/app-development",
+  },
+  {
+    title: "Email Marketing",
+    link: "services/email-marketing",
+  },
+  {
+    title: "Search Engine Optimization",
+    link: "services/seo",
+  },
+  {
+    title: "Google Ads",
+    link: "services/google-ads",
+  },
 ];
