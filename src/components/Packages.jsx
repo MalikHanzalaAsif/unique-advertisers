@@ -725,7 +725,7 @@ const TabsData = ({ activeTab }) => {
           "Lead Generation Included",
           "Dynamic Content",
         ],
-        price: "$999",
+        price: "$699",
         addon: ["Best Value for Money Guaranteed!"],
       },
       {
