@@ -5,8 +5,8 @@ import Packages from "@/components/Packages";
 const PackagePage = () => {
     return (
         <>
-        <Banner title="Packages" />
-        <Packages />
+            <Banner title="Packages" />
+            <Packages />
         </>
     );
 };

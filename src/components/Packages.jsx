@@ -69,7 +69,9 @@ const SinglePackage = ({ packageData, fTitle }) => {
           </div>
           <hr style={{ background: "#f2f2f2", height: 10, border: 0 }} />
           <div>
-            <h4>Add Ons:</h4>
+            {title !== "App Development" && (
+              <h4>Add Ons:</h4>
+            )}
             <ul className="package_list text-start">
               {packageData.addon.map((addonList, index) => {
                 return (
@@ -176,9 +178,8 @@ export function PackageTabs({ activeService }) {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`tabs_btn ${
-                activeTab === tab.id ? "active_tab" : " hover:text-white/60"
-              } relative px-8 text-white outline-sky-400 transition focus-visible:outline-2 uppercase mb-4`}
+              className={`tabs_btn ${activeTab === tab.id ? "active_tab" : " hover:text-white/60"
+                } relative px-8 text-white outline-sky-400 transition focus-visible:outline-2 uppercase mb-4`}
               style={{
                 WebkitTapHighlightColor: "transparent",
               }}
@@ -216,9 +217,9 @@ function PackageModal({ modalPackageDetails }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        {}
+        { }
         <Button variant="outline" className="text-black w-full">
-           Schedule a Call
+          Schedule a Call
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px]">
@@ -263,7 +264,7 @@ const TabsData = ({ activeTab }) => {
           "100% Satisfaction Guarantee",
           "100% Money Back Guarantee *",
         ],
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
         price: "$99",
         discountedPrice: "$330",
       },
@@ -277,7 +278,7 @@ const TabsData = ({ activeTab }) => {
           "100% Satisfaction Guarantee",
           "100% Money Back Guarantee *",
         ],
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
         price: "$199",
         discountedPrice: "$663",
       },
@@ -291,7 +292,7 @@ const TabsData = ({ activeTab }) => {
           "100% Satisfaction Guarantee",
           "100% Money Back Guarantee *",
         ],
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
         price: "$399",
         discountedPrice: "$1330",
       },
@@ -305,7 +306,7 @@ const TabsData = ({ activeTab }) => {
           "100% Satisfaction Guarantee",
           "100% Money Back Guarantee",
         ],
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
         price: "$499",
         discountedPrice: "$1663",
       },
@@ -328,7 +329,7 @@ const TabsData = ({ activeTab }) => {
           "100% Unique Design Guarantee",
           "100% Money Back Guarantee *",
         ],
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
         price: "$245",
         discountedPrice: "$816",
       },
@@ -462,7 +463,7 @@ const TabsData = ({ activeTab }) => {
           "No Setup Fee",
           "Cancel any time",
         ],
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
         price: "$499",
         discountedPrice: "$1330",
       },
@@ -483,7 +484,7 @@ const TabsData = ({ activeTab }) => {
           "No Setup Fee",
           "Cancel any time",
         ],
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
         price: "$799",
         discountedPrice: "$1996",
       },
@@ -501,7 +502,7 @@ const TabsData = ({ activeTab }) => {
           "4 weeks Delivery",
           "Unlimited Revisions",
         ],
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
         price: "$299",
         discountedPrice: "$1163",
       },
@@ -516,7 +517,7 @@ const TabsData = ({ activeTab }) => {
           "Voice - Over & Sound Effects",
           "5 weeks Delivery",
         ],
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
         price: "$699",
         discountedPrice: "$2496",
       },
@@ -531,7 +532,7 @@ const TabsData = ({ activeTab }) => {
           "Voice - Over & Sound Effects",
           "6 Weeks Delivery",
         ],
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
         price: "$899",
         discountedPrice: "$3163",
       },
@@ -545,7 +546,7 @@ const TabsData = ({ activeTab }) => {
           "Animation",
           "Voice - Over & Sound Effects",
         ],
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
         price: "$1299",
         discountedPrice: "$4830",
       },
@@ -567,7 +568,7 @@ const TabsData = ({ activeTab }) => {
           "1x chat box",
         ],
         price: "$250",
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
       },
       {
         title: "Platinum",
@@ -582,7 +583,7 @@ const TabsData = ({ activeTab }) => {
           "6x animated emotes",
         ],
         price: "$400",
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
       },
       {
         title: "Gold",
@@ -601,7 +602,7 @@ const TabsData = ({ activeTab }) => {
           "3x animated emotes",
         ],
         price: "$300",
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
       },
       {
         title: "Jack",
@@ -613,7 +614,7 @@ const TabsData = ({ activeTab }) => {
           "1x 2D/3D outro",
         ],
         price: "$500",
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
       },
       {
         title: "King",
@@ -630,7 +631,7 @@ const TabsData = ({ activeTab }) => {
           "screen emote",
         ],
         price: "$1200",
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
       },
       {
         title: "Queen",
@@ -640,7 +641,7 @@ const TabsData = ({ activeTab }) => {
           "2D/3D animated break screen",
         ],
         price: "$800",
-        addon: ["FREE Google Friendly Sitemap"],
+        addon: ["Best Value for Money Guaranteed!"],
       },
     ];
   } else if (activeTab === "smm") {
@@ -764,7 +765,7 @@ const TabsData = ({ activeTab }) => {
           "Search Engine Rank Report",
         ],
         price: "$399",
-        addon: ["Best Value for Money Guaranteed!"],
+        addon: ["100% Google Friendly SiteMap."],
       },
       {
         title: "Gold Plan",
@@ -786,7 +787,7 @@ const TabsData = ({ activeTab }) => {
           "Search Engine Rank Report",
         ],
         price: "$499",
-        addon: ["Best Value for Money Guaranteed!"],
+        addon: ["100% Google Friendly SiteMap."],
       },
       {
         title: "Platinum Package",
@@ -808,7 +809,7 @@ const TabsData = ({ activeTab }) => {
           "Search Engine Rank Report",
         ],
         price: "$599",
-        addon: ["Best Value for Money Guaranteed!"],
+        addon: ["100% Google Friendly SiteMap."],
       },
     ];
   } else if (activeTab === "googleAds") {
@@ -823,7 +824,7 @@ const TabsData = ({ activeTab }) => {
           "Access to exclusive PPC tools",
         ],
         price: "Starting from $699",
-        addon: ["Best Value for Money Guaranteed!"],
+        addon: ["100% Google Friendly SiteMap."],
       },
       {
         title: "Gold Plan",
@@ -839,7 +840,7 @@ const TabsData = ({ activeTab }) => {
           "Paid media budget management",
         ],
         price: "Starting from $1999",
-        addon: ["Best Value for Money Guaranteed!"],
+        addon: ["100% Google Friendly SiteMap."],
       },
       {
         title: "Platinum Package",
@@ -858,7 +859,7 @@ const TabsData = ({ activeTab }) => {
           "Development of digital assets (content creation, landing pages, a/b tests, custom PPC scripts, AI, studio, etc.)",
         ],
         price: "Starting from $4999",
-        addon: ["Best Value for Money Guaranteed!"],
+        addon: ["100% Google Friendly SiteMap."],
       },
     ];
   } else if (activeTab === "appDev") {
