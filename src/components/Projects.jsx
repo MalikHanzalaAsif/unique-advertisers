@@ -224,7 +224,7 @@ const TabsData = ({ activeTab }) => {
           "Your service-oriented website's app design is painstakingly created for the best possible functionality and user experience. To make sure your software stands out in terms of usefulness and visual appeal, we concentrate on user-friendly interfaces, smooth navigation, and contemporary aesthetics. Utilizing user research and state-of-the-art design concepts, our methodology creates an app that increases user pleasure and engagement.",
       },
     ];
-  } else if (activeTab === "social") {
+  } else if (activeTab === "Social") {
     projectShots = [
       {
         type: "image",
@@ -480,9 +480,9 @@ let tabs = [
     description: <TabsData activeTab={"website"} />,
   },
   {
-    id: "social",
+    id: "Social",
     label: "Social Media",
-    description: <TabsData activeTab={"social"} />,
+    description: <TabsData activeTab={"Social"} />,
   },
   {
     id: "anim",
