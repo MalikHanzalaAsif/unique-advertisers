@@ -85,7 +85,6 @@ const Contactform = ({ title, price }) => {
     setFieldValue,
   } = formik;
 
-  console.log(values)
   const renderValues = (id, type, placeholder, required) => {
     return (
       <InputComponent
