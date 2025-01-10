@@ -13,7 +13,7 @@ export const VARIABLES = {
   COMPANY_WEBSITE: "companyWebsite",
   COMPANY_WEBSITE_PLACEHOLDER: "Company Website if any",
   BUSINESS_TYPE: "businessType",
-  BUSINESS_TYPE_PLACEHOLDER: "Please select one",
+  BUSINESS_TYPE_PLACEHOLDER: "Please select one Required*",
   BUSINESS_TYPE_TITLE: "What kind of Business?",
   ANNUAL_REVENUE: "annualRevenue",
   ANNUAL_REVENUE_PLACEHOLDER: "Please select one (optional)",
