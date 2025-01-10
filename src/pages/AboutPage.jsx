@@ -8,6 +8,7 @@ import { SiAdobecreativecloud } from "react-icons/si";
 import AboutBanner from "/images/services/about-mockup.png";
 import SubTitle from "@/components/Subtitle";
 import AboutLeftImage from "/images/services/man-using-laptop.webp";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   const aboutCardContent = [
@@ -163,7 +164,7 @@ const LastBanner = () => {
           <h2 className="heading title text-black text-center pb-5">
             A NEW WAY TO CREATE <br /> PROJECT FOR YOUR COMPANY
           </h2>
-          <NavLink className="cta glow black_btn text-center flex justify-center">
+          <NavLink className="cta glow black_btn text-center flex justify-center" to={"/contact"}>
             <Button>Get Started Now</Button>
           </NavLink>
         </div>

@@ -354,10 +354,8 @@ export const brandingServiceData = {
     },
   ],
 };
-
-// TODO: Fulfill the data according to document it is just dummy.
 export const marketingServiceData = {
-  currentTab: "social",
+  currentTab: "Social",
   serivceBannerHeading: "Social Media Marketing",
   serviceSubheading: "",
   infoServiceTitle: "Social Media Marketing",
@@ -461,7 +459,7 @@ export const StreamersServiceData = {
   serviceSubheading: "",
   infoServiceTitle: "Streamers Templates",
   infoServiceDesc:
-    " With our planned digital marketing services, you may maximize your online presence and achieve results. We provide tailored plans to reach your target audience and meet your company goals, ranging from email campaigns and social media marketing to pay-per-click (PPC) advertising and search engine optimization (SEO). ",
+    " At Unique Advertisers, we specialize in crafting professional, customizable templates for streamers. Designed to reflect your unique style, our templates include overlays, alerts, banners, and panels to captivate your audience and elevate your stream. We provide everything you need to build a standout brand and create an engaging streaming experience. ",
   infoServiceImage: "VideoShot2",
   cardContent: [
     {
@@ -472,15 +470,15 @@ export const StreamersServiceData = {
   ],
   serviceDetailsTitle: "Streamers Templates",
   serviceDetailsDesc:
-    "At Unique Advertisers, we specialise in creating visually appealing, dynamic websites that are simple to use and retain. Our talented development team uses the most recent technology to craft unique websites that are tailored to your unique requirements, ensuring perfect operation and an exceptional user experience.",
+    " At Unique Advertisers, we design premium, customizable templates exclusively for streamers. Our templates are crafted to enhance your brand, engage your audience, and give your stream a professional edge. With eye-catching visuals and user-friendly designs, we ensure your stream stands out in the competitive streaming world. ",
   serviceDetailsImage: Images.STREAMER_COVER,
   serviceIconList: [
     {
-      title: "Share your vision",
+      title: "Elevate your stream",
       icon: <FaArrowsToEye />,
     },
     {
-      title: "Weave the Magic",
+      title: "Show your style",
       icon: <FaMagic />,
     },
   ],

@@ -447,48 +447,6 @@ const TabsData = ({ activeTab }) => {
         discountedPrice: "$1813",
       },
     ];
-  } else if (activeTab === "social") {
-    packageData = [
-      {
-        title: "Gold Business",
-        list: [
-          "3 postings per week (per network)",
-          "Social Account Setup",
-          "Business Page Optimization",
-          "Social Media Strategy (Overview)",
-          "Content Creation",
-          "Increase in followers",
-          "Account Management",
-          "Monthly Progress report",
-          "No Setup Fee",
-          "Cancel any time",
-        ],
-        addon: ["Best Value for Money Guaranteed!"],
-        price: "$499",
-        discountedPrice: "$1330",
-      },
-      {
-        title: "Platinum Business",
-        list: [
-          "5 postings per week (per network)",
-          "Social Account Setup",
-          "Business Page Optimization",
-          "Social Media Strategy",
-          "Content Creation",
-          "Increase in followers",
-          "Account Management",
-          "Reputation Management",
-          "Social Media Competitor Analysis",
-          "Spam / Comments monitoring",
-          "Monthly Progress report",
-          "No Setup Fee",
-          "Cancel any time",
-        ],
-        addon: ["Best Value for Money Guaranteed!"],
-        price: "$799",
-        discountedPrice: "$1996",
-      },
-    ];
   } else if (activeTab === "anim") {
     packageData = [
       {
@@ -644,7 +602,7 @@ const TabsData = ({ activeTab }) => {
         addon: ["Best Value for Money Guaranteed!"],
       },
     ];
-  } else if (activeTab === "smm") {
+  } else if (activeTab === "Social") {
     packageData = [
       {
         title: "Start Up Plan",
@@ -1139,9 +1097,9 @@ let tabs = [
   },
 
   {
-    id: "smm",
+    id: "Social",
     label: "Social Media",
-    description: <TabsData activeTab={"smm"} />,
+    description: <TabsData activeTab={"Social"} />,
   },
   {
     id: "anim",

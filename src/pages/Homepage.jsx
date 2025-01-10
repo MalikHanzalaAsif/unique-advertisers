@@ -332,7 +332,7 @@ export const SolutionsTabs = () => {
     },
     {
       title: "Streamers Templates",
-      desc: "Boost your online presence with our digital marketing services: email, social media, PPC, and SEO to reach your audience and achieve your goals.",
+      desc: "Unique Advertisers' Stream Templates elevate your brand with customizable overlays, alerts, banners, and panels designed to captivate and engage.",
       link: "/services/streamers-templates",
     },
     {

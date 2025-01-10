@@ -178,7 +178,7 @@ const servLinks = [
   },
   {
     title: "Social Media Marketing",
-    link: "services/digital-marketing",
+    link: "services/social-media-marketing",
   },
   {
     title: VARIABLES.SERVICES.STREAMERS,
