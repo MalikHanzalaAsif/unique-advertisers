@@ -5,9 +5,9 @@ import CardBox from "@/components/CardBox";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { RiTeamFill } from "react-icons/ri";
 import { SiAdobecreativecloud } from "react-icons/si";
-import AboutBanner from "/images/services/about-mockup.png";
+import AboutBanner from "/images/services/about-mockup.jpg";
 import SubTitle from "@/components/Subtitle";
-import AboutLeftImage from "/images/services/man-using-laptop.webp";
+import AboutLeftImage from "/images/services/man-using-laptop2.jpg";
 import { Link } from "react-router-dom";
 
 const AboutPage = () => {
