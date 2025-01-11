@@ -626,7 +626,7 @@ export const emailServiceData = {
       boxContent: "",
     },
   ],
-  serviceDetailsTitle: "Search Engine Optimization",
+  serviceDetailsTitle: "Email Marketing",
   serviceDetailsDesc:
     " At Unique Advertisers, email marketing is a powerful tool to engage your audience and drive results. We design targeted, personalized campaigns that reach the right people with the right message, promoting your brand and building lasting relationships. Our approach ensures higher engagement, conversions, and business growth. ",
   serviceDetailsImage: "emailShot2",
